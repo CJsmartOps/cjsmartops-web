@@ -1,4 +1,5 @@
 import { HeroSection } from "@/components/sections/hero-section";
+import { TrustMetricsSection } from "@/components/sections/trust-metrics-section";
 import { ProblemSection } from "@/components/sections/problem-section";
 import { ArchitectureSection } from "@/components/sections/architecture-section";
 import { PlatformCapabilitiesSection } from "@/components/sections/platform-capabilities-section";
@@ -9,6 +10,7 @@ export default function Home() {
   return (
     <>
       <HeroSection />
+      <TrustMetricsSection />
       <ProblemSection />
       <ArchitectureSection />
       <PlatformCapabilitiesSection />
