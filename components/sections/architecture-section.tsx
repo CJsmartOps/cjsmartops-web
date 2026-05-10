@@ -12,8 +12,8 @@ const modules = [
     border: "border-blue-500/20",
     text: "text-blue-400",
     iconBg: "bg-blue-500/15",
-    badge: "Enforcement Layer",
-    items: ["Runtime containment", "Quarantine engine", "Trust governance"],
+    badge: "Capa de Contención",
+    items: ["Contención en runtime", "Motor de cuarentena", "Gobernanza de confianza"],
   },
   {
     icon: Activity,
@@ -22,8 +22,8 @@ const modules = [
     border: "border-cyan-400/20",
     text: "text-cyan-400",
     iconBg: "bg-cyan-500/15",
-    badge: "Telemetry Layer",
-    items: ["Drift detection", "Forensic context", "Behavioral baselines"],
+    badge: "Capa de Telemetría",
+    items: ["Detección de drift", "Contexto forense", "Líneas base de comportamiento"],
   },
   {
     icon: Cpu,
@@ -32,8 +32,8 @@ const modules = [
     border: "border-violet-400/20",
     text: "text-violet-400",
     iconBg: "bg-violet-500/15",
-    badge: "Orchestration Layer",
-    items: ["Dashboard engine", "Event correlation", "Auto-remediation"],
+    badge: "Capa de Orquestación",
+    items: ["Motor de dashboards", "Correlación de eventos", "Auto-remediación"],
   },
   {
     icon: Brain,
@@ -42,8 +42,8 @@ const modules = [
     border: "border-emerald-400/20",
     text: "text-emerald-400",
     iconBg: "bg-emerald-500/15",
-    badge: "Semantic Intelligence",
-    items: ["Network behavior", "Contextual reputation", "Pattern analysis"],
+    badge: "Inteligencia Semántica",
+    items: ["Comportamiento de red", "Reputación contextual", "Análisis de patrones"],
   },
 ];
 
@@ -61,15 +61,13 @@ export function ArchitectureSection() {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            <SectionBadge>Architecture</SectionBadge>
+            <SectionBadge>Arquitectura</SectionBadge>
             <h2 className="mt-6 text-4xl font-bold leading-tight tracking-tight text-foreground sm:text-5xl">
-              A Platform Built On{" "}
-              <span className="text-glow">Four Pillars</span>
+              Una Plataforma Sobre{" "}
+              <span className="text-glow">Cuatro Pilares</span>
             </h2>
             <p className="mt-4 text-lg leading-relaxed text-secondary">
-              Every component is designed to operate independently yet correlate
-              seamlessly. From runtime enforcement to semantic analysis, the
-              stack forms a complete defensive surface.
+              Cada componente está diseñado para operar de forma independiente y correlacionarse sin fricción. Desde la contención en runtime hasta el análisis semántico, el stack forma una superficie defensiva completa.
             </p>
           </motion.div>
         </div>
@@ -103,7 +101,6 @@ export function ArchitectureSection() {
           ))}
         </div>
 
-        {/* Connector line */}
         <div className="mt-12 hidden items-center justify-center gap-1 lg:flex">
           {[...Array(48)].map((_, i) => (
             <div

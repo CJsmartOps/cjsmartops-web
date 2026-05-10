@@ -5,10 +5,10 @@ import { Shield } from "lucide-react";
 import { useState, useEffect } from "react";
 
 const links = [
-  { href: "/#architecture", label: "Architecture" },
-  { href: "/research", label: "Research" },
-  { href: "/security", label: "Security" },
-  { href: "/privacy", label: "Privacy" },
+  { href: "/#architecture", label: "Arquitectura" },
+  { href: "/research", label: "Investigación" },
+  { href: "/security", label: "Seguridad" },
+  { href: "/privacy", label: "Privacidad" },
 ];
 
 export function Navbar() {
@@ -50,7 +50,7 @@ export function Navbar() {
             href="/contact"
             className="rounded-full bg-accent px-5 py-2 text-sm font-medium text-white transition-all duration-300 hover:bg-accent/90 hover:shadow-[0_0_20px_rgba(37,99,235,0.3)]"
           >
-            Contact
+            Contacto
           </Link>
         </div>
       </nav>

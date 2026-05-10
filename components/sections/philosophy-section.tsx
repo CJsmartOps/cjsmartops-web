@@ -13,28 +13,28 @@ import { SectionBadge } from "@/components/ui/section-badge";
 const principles = [
   {
     icon: ShieldCheck,
-    title: "Reversible Containment",
-    desc: "Every enforcement action supports rollback. Safety mechanisms guarantee operational stability during automated response.",
+    title: "Contención Reversible",
+    desc: "Cada acción de contención admite reversión. Mecanismos de seguridad garantizan estabilidad operativa durante la respuesta automatizada.",
   },
   {
     icon: Eye,
-    title: "Contextual Analysis",
-    desc: "Decisions are driven by runtime context — not just static signatures. Memory, process trees, and network behavior inform every action.",
+    title: "Análisis Contextual",
+    desc: "Las decisiones se basan en contexto de runtime — no solo en firmas estáticas. Memoria, árboles de procesos y comportamiento de red informan cada acción.",
   },
   {
     icon: Box,
-    title: "Explainable Architecture",
-    desc: "Transparency is built in. Every correlation, every quarantine, and every alert includes a full evidence chain for audit.",
+    title: "Arquitectura Explicable",
+    desc: "La transparencia está incorporada. Cada correlación, cada cuarentena y cada alerta incluye una cadena de evidencia completa para auditoría.",
   },
   {
     icon: GitBranch,
-    title: "Adaptive Trust",
-    desc: "Trust scores evolve with behavior. Baselines adapt continuously, eliminating the false choice between security and availability.",
+    title: "Confianza Adaptativa",
+    desc: "Los puntajes de confianza evolucionan con el comportamiento. Las líneas base se adaptan continuamente, eliminando la falsa elección entre seguridad y disponibilidad.",
   },
   {
     icon: Layers,
-    title: "Low Operational Impact",
-    desc: "Agent footprint under 40MB. Non-blocking telemetry collection. Designed to run silently alongside production workloads.",
+    title: "Bajo Impacto Operacional",
+    desc: "Huella del agente inferior a 40MB. Recolección de telemetría no bloqueante. Diseñado para ejecutarse silenciosamente junto a cargas de producción.",
   },
 ];
 
@@ -51,15 +51,13 @@ export function PhilosophySection() {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            <SectionBadge>Philosophy</SectionBadge>
+            <SectionBadge>Filosofía</SectionBadge>
             <h2 className="mt-6 text-4xl font-bold leading-tight tracking-tight text-foreground sm:text-5xl">
-              Observe Before{" "}
-              <span className="text-glow">You Automate</span>
+              Observar Antes de{" "}
+              <span className="text-glow">Automatizar</span>
             </h2>
             <p className="mx-auto mt-4 max-w-2xl text-lg leading-relaxed text-secondary">
-              Security automation must be built on a foundation of visibility.
-              Our philosophy prioritizes understanding over action — because
-              informed decisions are always better than fast ones.
+              La automatización de seguridad debe construirse sobre una base de visibilidad. Nuestra filosofía prioriza la comprensión sobre la acción — porque las decisiones informadas siempre son mejores que las rápidas.
             </p>
           </motion.div>
         </div>

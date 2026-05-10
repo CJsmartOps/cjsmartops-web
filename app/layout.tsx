@@ -17,25 +17,25 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://cjsmartops.com"),
   title: {
-    default: "CJsmartOps — Contextual Runtime Defense",
+    default: "CJsmartOps — Defensa Contextual en Runtime",
     template: "%s — CJsmartOps",
   },
   description:
-    "Observability-driven security platform focused on runtime governance, semantic telemetry and contextual defense for modern infrastructure.",
+    "Plataforma de seguridad basada en observabilidad, enfocada en gobernanza de runtime, telemetría semántica y defensa contextual para infraestructura moderna.",
   keywords: [
-    "runtime defense",
-    "observability",
-    "security platform",
-    "contextual telemetry",
-    "semantic analysis",
-    "trust governance",
-    "infrastructure security",
+    "defensa en runtime",
+    "observabilidad",
+    "plataforma de seguridad",
+    "telemetría contextual",
+    "análisis semántico",
+    "gobernanza de confianza",
+    "seguridad de infraestructura",
   ],
   openGraph: {
     siteName: "CJsmartOps",
-    title: "CJsmartOps — Contextual Runtime Defense",
+    title: "CJsmartOps — Defensa Contextual en Runtime",
     description:
-      "Observability-driven security platform. Runtime governance, semantic telemetry, and contextual defense.",
+      "Plataforma de seguridad basada en observabilidad. Gobernanza de runtime, telemetría semántica y defensa contextual.",
     type: "website",
   },
   robots: "index, follow",
@@ -51,7 +51,7 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="en"
+      lang="es"
       translate="no"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased notranslate`}
     >

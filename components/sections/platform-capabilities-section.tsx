@@ -9,35 +9,35 @@ import { SectionBadge } from "@/components/ui/section-badge";
 
 const capabilities = [
   {
-    group: "Runtime Governance",
+    group: "Gobernanza de Runtime",
     items: [
-      { icon: Shield, label: "Agent-scoped enforcement boundaries", detail: "Strict isolation with reversible containment policies per agent" },
-      { icon: Lock, label: "Fernet AES encryption at rest", detail: "All secrets, tokens, and client data encrypted with key rotation" },
-      { icon: Cpu, label: "Process-level RAM guard", detail: "Fileless attack detection via memfd, LD_PRELOAD, and deleted binary analysis every 60s" },
+      { icon: Shield, label: "Perímetros de contención por agente", detail: "Aislamiento estricto con políticas de contención reversible por agente" },
+      { icon: Lock, label: "Cifrado Fernet AES en reposo", detail: "Todos los secretos, tokens y datos de clientes cifrados con rotación de claves" },
+      { icon: Cpu, label: "RAM Guard a nivel de proceso", detail: "Detección de ataques fileless vía memfd, LD_PRELOAD y análisis de binarios eliminados cada 60s" },
     ],
   },
   {
-    group: "Supply Chain Defense",
+    group: "Defensa de Supply Chain",
     items: [
-      { icon: PackageOpen, label: "Mandatory supply chain validation", detail: "TRUSTED_SOURCES whitelist, SHA256 manifest verification, automated rollback" },
-      { icon: Wrench, label: "8-layer YARA rule pipeline", detail: "566 external rules updated weekly with anti-tamper checks at every stage" },
-      { icon: Network, label: "Static package pre-install inspection", detail: "npm and pip packages analyzed for suspicious patterns before installation" },
+      { icon: PackageOpen, label: "Validación obligatoria de supply chain", detail: "Whitelist TRUSTED_SOURCES, verificación de manifiesto SHA256, rollback automático" },
+      { icon: Wrench, label: "Pipeline YARA de 8 capas", detail: "566 reglas externas actualizadas semanalmente con verificación anti-manipulación en cada etapa" },
+      { icon: Network, label: "Inspección estática pre-instalación", detail: "Paquetes npm y pip analizados en busca de patrones sospechosos antes de la instalación" },
     ],
   },
   {
-    group: "Observability & Telemetry",
+    group: "Observabilidad y Telemetría",
     items: [
-      { icon: Activity, label: "Multi-agent telemetry aggregation", detail: "6 independent agents emit structured telemetry to a central correlation pipeline" },
-      { icon: Eye, label: "Drift detection and behavioral baselining", detail: "Statistical deviation analysis across weeks of longitudinal process data" },
-      { icon: Brain, label: "Semantic network analysis (CIPHER)", detail: "TCP flow classification with 3 detectors: rare destination, process fan-out, repeated SYN" },
+      { icon: Activity, label: "Agregación de telemetría multi-agente", detail: "6 agentes independientes emiten telemetría estructurada hacia un pipeline central de correlación" },
+      { icon: Eye, label: "Detección de drift y líneas base de comportamiento", detail: "Análisis de desviación estadística sobre semanas de datos longitudinales de procesos" },
+      { icon: Brain, label: "Análisis semántico de red (CIPHER)", detail: "Clasificación de flujos TCP con 3 detectores: destino inusual, fan-out de procesos, SYN repetidos" },
     ],
   },
   {
-    group: "Trust & Forensic Readiness",
+    group: "Confianza y Preparación Forense",
     items: [
-      { icon: HardDrive, label: "Immutable audit logging", detail: "HMAC-SHA256 signed event chains with SOC2-compliant retention" },
-      { icon: Lock, label: "Evidence-gated remediation", detail: "Every alert includes full evidence chain: correlation path, source telemetry, and decision rationale" },
-      { icon: Shield, label: "Adaptive trust scoring", detail: "Trust scores decay toward neutrality unless reinforced by sustained behavioral evidence" },
+      { icon: HardDrive, label: "Registro de auditoría inmutable", detail: "Cadenas de eventos firmadas con HMAC-SHA256 con retención compatible SOC2" },
+      { icon: Lock, label: "Remediación basada en evidencia", detail: "Cada alerta incluye cadena de evidencia completa: ruta de correlación, telemetría de origen y justificación de la decisión" },
+      { icon: Shield, label: "Scoring de confianza adaptativo", detail: "Los puntajes de confianza decaen hacia neutralidad a menos que sean reforzados por evidencia de comportamiento sostenida" },
     ],
   },
 ];
@@ -56,15 +56,13 @@ export function PlatformCapabilitiesSection() {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            <SectionBadge>Platform</SectionBadge>
+            <SectionBadge>Plataforma</SectionBadge>
             <h2 className="mt-6 text-4xl font-bold leading-tight tracking-tight text-foreground sm:text-5xl">
-              Platform{" "}
-              <span className="text-glow">Capabilities</span>
+              Capacidades de la{" "}
+              <span className="text-glow">Plataforma</span>
             </h2>
             <p className="mt-4 text-lg leading-relaxed text-secondary">
-              Every listed capability is implemented and operational in our
-              deployment environment. No aspirational features — just verified
-              defensive infrastructure.
+              Cada capacidad listada está implementada y operativa en nuestro entorno de despliegue. Sin funcionalidades aspiracionales — solo infraestructura defensiva verificada.
             </p>
           </motion.div>
         </div>

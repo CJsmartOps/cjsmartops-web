@@ -8,28 +8,28 @@ import { GradientCard } from "@/components/ui/gradient-card";
 const research = [
   {
     icon: Database,
-    title: "Runtime Telemetry",
-    desc: "Longitudinal collection of process-level signals across heterogeneous environments. Build behavioral profiles that evolve over weeks and months.",
+    title: "Telemetría de Runtime",
+    desc: "Recolección longitudinal de señales a nivel de proceso en entornos heterogéneos. Construcción de perfiles de comportamiento que evolucionan durante semanas y meses.",
   },
   {
     icon: Network,
-    title: "Distributed Observability",
-    desc: "Multi-agent telemetry aggregation with semantic correlation. Understand patterns across endpoints, networks, and cloud workloads simultaneously.",
+    title: "Observabilidad Distribuida",
+    desc: "Agregación de telemetría multi-agente con correlación semántica. Comprensión de patrones entre endpoints, redes y cargas cloud simultáneamente.",
   },
   {
     icon: GitCompare,
-    title: "Semantic Network Analysis",
-    desc: "Map communication flows and classify relationships using contextual reputation scoring — not just IP-to-IP connection logs.",
+    title: "Análisis Semántico de Red",
+    desc: "Mapeo de flujos de comunicación y clasificación de relaciones usando scoring de reputación contextual — no solo registros de conexión IP a IP.",
   },
   {
     icon: TrendingUp,
-    title: "Operational Baselining",
-    desc: "Statistical modeling of normal behavior per workload. Detect drift early and distinguish anomalies from genuine threats with confidence.",
+    title: "Líneas Base Operacionales",
+    desc: "Modelado estadístico del comportamiento normal por carga de trabajo. Detección temprana de drift y distinción entre anomalías y amenazas genuinas con alta confianza.",
   },
   {
     icon: Microscope,
-    title: "Contextual Correlation",
-    desc: "Cross-reference telemetry across AEGIS, Vigil, and CIPHER layers. Surface hidden attack chains that single-source monitoring would miss.",
+    title: "Correlación Contextual",
+    desc: "Referencia cruzada de telemetría entre las capas AEGIS, Vigil y CIPHER. Revela cadenas de ataque ocultas que el monitoreo de fuente única pasaría por alto.",
   },
 ];
 
@@ -47,15 +47,13 @@ export function ResearchSection() {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            <SectionBadge>Research</SectionBadge>
+            <SectionBadge>Investigación</SectionBadge>
             <h2 className="mt-6 text-4xl font-bold leading-tight tracking-tight text-foreground sm:text-5xl">
-              Built for{" "}
-              <span className="text-glow">Longitudinal Research</span>
+              Construido para{" "}
+              <span className="text-glow">Investigación Longitudinal</span>
             </h2>
             <p className="mt-4 text-lg leading-relaxed text-secondary">
-              Our platform is a research ecosystem first. Every capability is
-              designed to support ongoing investigation, continuous baselining,
-              and the scientific study of defensive signals at scale.
+              Nuestra plataforma es ante todo un ecosistema de investigación. Cada capacidad está diseñada para respaldar la investigación continua, el establecimiento de líneas base y el estudio científico de señales defensivas a escala.
             </p>
           </motion.div>
         </div>

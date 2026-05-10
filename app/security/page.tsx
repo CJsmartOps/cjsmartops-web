@@ -3,31 +3,31 @@ import { PageHeader } from "@/components/ui/page-header";
 import { GradientCard } from "@/components/ui/gradient-card";
 
 export const metadata: Metadata = {
-  title: "Security & Platform Integrity",
+  title: "Seguridad e Integridad de Plataforma",
   description:
-    "Runtime governance and contextual defense architecture. Understand how CJsmartOps approaches security, containment, and operational integrity.",
+    "Gobernanza de runtime y arquitectura de defensa contextual. Conocé cómo CJsmartOps aborda la seguridad, contención e integridad operacional.",
 };
 
 const sections = [
   {
-    title: "Runtime Governance",
-    body: "Our agents operate with strict scope boundaries. AEGIS enforces containment policies at the process level. Vigil collects telemetry without disrupting workloads. Every enforcement action is logged, reversible, and auditable.",
+    title: "Gobernanza de Runtime",
+    body: "Nuestros agentes operan con límites de alcance estrictos. AEGIS impone políticas de contención a nivel de proceso. Vigil recolecta telemetría sin interrumpir las cargas de trabajo. Cada acción de contención se registra, es reversible y auditable.",
   },
   {
-    title: "Observability Architecture",
-    body: "Observability is not an add-on — it is the foundation. Our platform ingests process-level signals, correlates across agents, and surfaces contextual insights through dashboards and programmatic APIs. No alert is generated without an evidence chain.",
+    title: "Arquitectura de Observabilidad",
+    body: "La observabilidad no es un complemento — es la base. Nuestra plataforma ingiere señales a nivel de proceso, correlaciona entre agentes y muestra perspectivas contextuales mediante dashboards y APIs programáticas. Ninguna alerta se genera sin una cadena de evidencia.",
   },
   {
-    title: "Reversible Containment",
-    body: "Automated response must never compromise operational stability. All containment actions support rollback. Quarantine states are time-bounded. Trust scores decay towards neutrality unless reinforced by sustained behavioral evidence.",
+    title: "Contención Reversible",
+    body: "La respuesta automatizada nunca debe comprometer la estabilidad operativa. Todas las acciones de contención admiten reversión. Los estados de cuarentena tienen límite temporal. Los puntajes de confianza decaen hacia la neutralidad a menos que sean reforzados por evidencia de comportamiento sostenida.",
   },
   {
-    title: "Minimal Operational Impact",
-    body: "Agent footprint is kept under 40MB in memory. Telemetry collection is non-blocking and rate-limited. The platform is designed to run alongside production workloads — not interfere with them.",
+    title: "Impacto Operacional Mínimo",
+    body: "La huella del agente se mantiene por debajo de 40MB en memoria. La recolección de telemetría es no bloqueante y con límite de frecuencia. La plataforma está diseñada para ejecutarse junto a cargas de producción — no para interferir con ellas.",
   },
   {
-    title: "Responsible Research Philosophy",
-    body: "CJsmartOps is a research-driven platform. Security postures are derived from empirical observation, not vendor claims. We study runtime behavior, build longitudinal baselines, and share findings with the community when operationally safe to do so.",
+    title: "Filosofía de Investigación Responsable",
+    body: "CJsmartOps es una plataforma orientada a la investigación. Las posturas de seguridad se derivan de la observación empírica, no de afirmaciones de proveedores. Estudiamos el comportamiento en runtime, construimos líneas base longitudinales y compartimos hallazgos con la comunidad cuando es operacionalmente seguro hacerlo.",
   },
 ];
 
@@ -35,9 +35,9 @@ export default function SecurityPage() {
   return (
     <div className="flex flex-col">
       <PageHeader
-        eyebrow="Security"
-        title="Security & Platform Integrity"
-        subtitle="How CJsmartOps approaches runtime defense, containment, observability, and operational responsibility."
+        eyebrow="Seguridad"
+        title="Seguridad e Integridad de Plataforma"
+        subtitle="Cómo CJsmartOps aborda la defensa en runtime, la contención, la observabilidad y la responsabilidad operacional."
       />
 
       <section className="py-20 px-6">

@@ -4,55 +4,54 @@ import { GradientCard } from "@/components/ui/gradient-card";
 import { Shield, Activity, Cpu, Brain } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Research Platform",
+  title: "Plataforma de Investigación",
   description:
-    "Observability-driven research platform for contextual runtime defense. Longitudinal telemetry, semantic analysis, and adaptive trust systems.",
+    "Plataforma de investigación basada en observabilidad para defensa contextual en runtime. Telemetría longitudinal, análisis semántico y sistemas de confianza adaptativa.",
 };
 
 const methodology = [
   {
-    title: "Longitudinal Telemetry",
-    body: "We collect process-level signals over extended time windows — weeks and months, not minutes. This enables statistical baselining with high confidence and early drift detection that threshold-based rules would miss.",
+    title: "Telemetría Longitudinal",
+    body: "Recolectamos señales a nivel de proceso durante ventanas de tiempo extendidas — semanas y meses, no minutos. Esto permite establecer líneas base estadísticas con alta confianza y detectar drift temprano que las reglas basadas en umbrales no detectarían.",
   },
   {
-    title: "Runtime Behavioral Analysis",
-    body: "Rather than relying on static signatures, our agents analyze runtime behavior: memory allocation patterns, process tree evolution, network communication flows, and filesystem interactions.",
+    title: "Análisis de Comportamiento en Runtime",
+    body: "En lugar de depender de firmas estáticas, nuestros agentes analizan el comportamiento en runtime: patrones de asignación de memoria, evolución del árbol de procesos, flujos de comunicación de red e interacciones con el sistema de archivos.",
   },
   {
-    title: "Semantic Contextualization",
-    body: "CIPHER enriches raw telemetry with contextual reputation scoring. Relationships between processes, network endpoints, and workloads are mapped and classified — not just logged.",
+    title: "Contextualización Semántica",
+    body: "CIPHER enriquece la telemetría cruda con scoring de reputación contextual. Las relaciones entre procesos, endpoints de red y cargas de trabajo se mapean y clasifican — no solo se registran.",
   },
   {
-    title: "Distributed Observability",
-    body: "Multi-agent deployment across heterogeneous environments enables cross-endpoint correlation. Patterns that appear benign in isolation are surfaced when viewed across the fleet.",
+    title: "Observabilidad Distribuida",
+    body: "El despliegue multi-agente en entornos heterogéneos permite la correlación entre endpoints. Los patrones que parecen inocuos de forma aislada se revelan cuando se observan en toda la flota.",
   },
   {
-    title: "Adaptive Trust Systems",
-    body: "Trust is not binary. Our scoring models evolve continuously based on behavioral evidence. Scores decay over time, requiring sustained positive behavior to maintain high-trust classification.",
+    title: "Sistemas de Confianza Adaptativa",
+    body: "La confianza no es binaria. Nuestros modelos de scoring evolucionan continuamente según la evidencia de comportamiento. Los puntajes decaen con el tiempo, requiriendo comportamiento positivo sostenido para mantener una clasificación de alta confianza.",
   },
 ];
 
 const modules = [
-  { icon: Shield, name: "AEGIS", desc: "Runtime enforcement and quarantine engine. Reversible containment with full audit trail.", color: "text-blue-400", bg: "bg-blue-500/15" },
-  { icon: Activity, name: "Vigil", desc: "Telemetry collection and drift detection. Non-blocking, low-footprint, forensic-ready.", color: "text-cyan-400", bg: "bg-cyan-500/15" },
-  { icon: Cpu, name: "Genesis", desc: "Orchestration, dashboards, and event correlation. Central nervous system of the platform.", color: "text-violet-400", bg: "bg-violet-500/15" },
-  { icon: Brain, name: "CIPHER", desc: "Semantic intelligence. Network behavior mapping, contextual reputation, and pattern analysis.", color: "text-emerald-400", bg: "bg-emerald-500/15" },
+  { icon: Shield, name: "AEGIS", desc: "Motor de contención en runtime y cuarentena. Contención reversible con registro de auditoría completo.", color: "text-blue-400", bg: "bg-blue-500/15" },
+  { icon: Activity, name: "Vigil", desc: "Recolección de telemetría y detección de drift. No bloqueante, huella mínima, preparado para forensia.", color: "text-cyan-400", bg: "bg-cyan-500/15" },
+  { icon: Cpu, name: "Genesis", desc: "Orquestación, dashboards y correlación de eventos. Sistema nervioso central de la plataforma.", color: "text-violet-400", bg: "bg-violet-500/15" },
+  { icon: Brain, name: "CIPHER", desc: "Inteligencia semántica. Mapeo de comportamiento de red, reputación contextual y análisis de patrones.", color: "text-emerald-400", bg: "bg-emerald-500/15" },
 ];
 
 export default function ResearchPage() {
   return (
     <div className="flex flex-col">
       <PageHeader
-        eyebrow="Research"
-        title="Research Platform"
-        subtitle="CJsmartOps is a research-driven platform. Every capability supports longitudinal investigation, applied defensive analysis, and the scientific study of runtime behavior."
+        eyebrow="Investigación"
+        title="Plataforma de Investigación"
+        subtitle="CJsmartOps es una plataforma orientada a la investigación. Cada capacidad respalda la investigación longitudinal, el análisis defensivo aplicado y el estudio científico del comportamiento en runtime."
       />
 
-      {/* Methodology */}
       <section className="py-16 px-6">
         <div className="mx-auto max-w-7xl">
           <h2 className="mb-10 text-center text-2xl font-bold text-foreground">
-            Research Methodology
+            Metodología de Investigación
           </h2>
           <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {methodology.slice(0, 3).map(({ title, body }, i) => (
@@ -73,11 +72,10 @@ export default function ResearchPage() {
         </div>
       </section>
 
-      {/* Modules */}
       <section className="py-16 px-6 bg-surface/30">
         <div className="mx-auto max-w-7xl">
           <h2 className="mb-10 text-center text-2xl font-bold text-foreground">
-            Platform Modules
+            Módulos de la Plataforma
           </h2>
           <div className="grid gap-6 lg:grid-cols-4">
             {modules.map(({ icon: Icon, name, desc, color, bg }) => (
@@ -96,16 +94,13 @@ export default function ResearchPage() {
         </div>
       </section>
 
-      {/* Philosophy */}
       <section className="py-16 px-6">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="text-2xl font-bold text-foreground">
-            Observe Before You Automate
+            Observar Antes de Automatizar
           </h2>
           <p className="mt-4 text-lg leading-relaxed text-secondary">
-            Our research philosophy prioritizes understanding over action.
-            Informed decisions — grounded in empirical observation and
-            longitudinal context — are always better than fast ones.
+            Nuestra filosofía de investigación prioriza la comprensión sobre la acción. Las decisiones informadas — basadas en observación empírica y contexto longitudinal — siempre son mejores que las rápidas.
           </p>
         </div>
       </section>
