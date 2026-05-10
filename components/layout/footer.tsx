@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export function Footer() {
   const year = new Date().getFullYear();
 
@@ -29,12 +31,29 @@ export function Footer() {
 
           <div>
             <h3 className="mb-3 text-sm font-semibold text-foreground">
-              Connect
+              Company
             </h3>
-            <ul className="space-y-2.5 text-sm text-muted">
-              <li>contacto.cjsmartops@gmail.com</li>
-              <li>Laboulaye, Córdoba</li>
-              <li>Argentina</li>
+            <ul className="space-y-2.5 text-sm">
+              <li>
+                <Link href="/research" className="text-muted transition-colors hover:text-foreground">
+                  Research
+                </Link>
+              </li>
+              <li>
+                <Link href="/security" className="text-muted transition-colors hover:text-foreground">
+                  Security
+                </Link>
+              </li>
+              <li>
+                <Link href="/privacy" className="text-muted transition-colors hover:text-foreground">
+                  Privacy
+                </Link>
+              </li>
+              <li>
+                <Link href="/contact" className="text-muted transition-colors hover:text-foreground">
+                  Contact
+                </Link>
+              </li>
             </ul>
           </div>
         </div>

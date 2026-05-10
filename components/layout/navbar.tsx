@@ -5,9 +5,10 @@ import { Shield } from "lucide-react";
 import { useState, useEffect } from "react";
 
 const links = [
-  { href: "#architecture", label: "Architecture" },
-  { href: "#philosophy", label: "Philosophy" },
-  { href: "#research", label: "Research" },
+  { href: "/#architecture", label: "Architecture" },
+  { href: "/research", label: "Research" },
+  { href: "/security", label: "Security" },
+  { href: "/privacy", label: "Privacy" },
 ];
 
 export function Navbar() {
@@ -35,7 +36,7 @@ export function Navbar() {
           </span>
         </Link>
 
-        <div className="hidden items-center gap-8 text-sm md:flex">
+        <div className="hidden items-center gap-7 text-sm md:flex">
           {links.map(({ href, label }) => (
             <Link
               key={href}
@@ -45,12 +46,12 @@ export function Navbar() {
               {label}
             </Link>
           ))}
-          <a
-            href="mailto:contacto.cjsmartops@gmail.com"
+          <Link
+            href="/contact"
             className="rounded-full bg-accent px-5 py-2 text-sm font-medium text-white transition-all duration-300 hover:bg-accent/90 hover:shadow-[0_0_20px_rgba(37,99,235,0.3)]"
           >
             Contact
-          </a>
+          </Link>
         </div>
       </nav>
     </header>
