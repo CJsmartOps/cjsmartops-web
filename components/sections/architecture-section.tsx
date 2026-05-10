@@ -90,7 +90,7 @@ export function ArchitectureSection() {
               <span className="mb-1 inline-block rounded-full bg-surface/80 px-2.5 py-0.5 text-[10px] font-medium tracking-wide text-muted uppercase backdrop-blur-sm">
                 {badge}
               </span>
-              <h3 className="mt-2 text-xl font-bold text-foreground">{name}</h3>
+              <h3 className="mt-2 text-xl font-bold text-foreground notranslate" translate="no">{name}</h3>
               <ul className="mt-4 space-y-2.5">
                 {items.map((item) => (
                   <li key={item} className="flex items-start gap-2 text-sm text-secondary">

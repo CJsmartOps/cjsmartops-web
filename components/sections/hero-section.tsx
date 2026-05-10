@@ -25,7 +25,7 @@ export function HeroSection() {
         >
           {/* Eyebrow */}
           <div className="mb-8">
-            <span className="inline-flex items-center gap-2 rounded-full border border-border-medium bg-glass px-4 py-1.5 text-xs font-medium tracking-widest text-glow uppercase backdrop-blur-md">
+            <span className="inline-flex items-center gap-2 rounded-full border border-border-medium bg-glass px-4 py-1.5 text-xs font-medium tracking-widest text-glow uppercase backdrop-blur-md notranslate" translate="no">
               <Activity className="h-3 w-3" />
               Contextual Runtime Defense
             </span>

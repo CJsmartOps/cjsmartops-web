@@ -21,10 +21,11 @@ export function Footer() {
             <h3 className="mb-3 text-sm font-semibold text-foreground">
               Platform
             </h3>
-            <ul className="space-y-2.5 text-sm text-muted">
-              <li>info@cjsmartops.com.ar</li>
-              <li>Laboulaye, Córdoba</li>
-              <li>Argentina</li>
+            <ul className="space-y-2.5 text-sm text-muted notranslate">
+              <li translate="no">AEGIS — Enforcement</li>
+              <li translate="no">Vigil — Telemetry</li>
+              <li translate="no">Genesis — Orchestration</li>
+              <li translate="no">CIPHER — Intelligence</li>
             </ul>
           </div>
 

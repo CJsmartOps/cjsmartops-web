@@ -88,7 +88,7 @@ export default function ResearchPage() {
                 <div className={`mb-4 inline-flex rounded-lg ${bg} p-2.5`}>
                   <Icon className={`h-5 w-5 ${color}`} />
                 </div>
-                <h3 className="mb-2 text-base font-semibold text-foreground">{name}</h3>
+                <h3 className="mb-2 text-base font-semibold text-foreground notranslate" translate="no">{name}</h3>
                 <p className="text-sm leading-relaxed text-secondary">{desc}</p>
               </div>
             ))}

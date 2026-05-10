@@ -31,7 +31,7 @@ export function Navbar() {
           <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-accent/15 transition-colors group-hover:bg-accent/25">
             <Shield className="h-4 w-4 text-accent" />
           </div>
-          <span className="text-lg font-semibold tracking-tight text-foreground">
+          <span className="text-lg font-semibold tracking-tight text-foreground notranslate" translate="no">
             CJsmart<span className="text-accent">Ops</span>
           </span>
         </Link>
