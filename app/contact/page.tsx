@@ -26,10 +26,10 @@ export default function ContactPage() {
                 evaluation, reach us at:
               </p>
               <a
-                href="mailto:contacto.cjsmartops@gmail.com"
+                href="mailto:info@cjsmartops.com.ar"
                 className="mt-3 inline-block text-base font-medium text-glow transition-colors hover:text-accent"
               >
-                contacto.cjsmartops@gmail.com
+                info@cjsmartops.com.ar
               </a>
             </div>
 

@@ -53,10 +53,10 @@ export default function PrivacyPage() {
             <p className="text-sm text-secondary">
               For questions about data handling or research access, contact{" "}
               <a
-                href="mailto:contacto.cjsmartops@gmail.com"
+                href="mailto:info@cjsmartops.com.ar"
                 className="font-medium text-glow transition-colors hover:text-accent"
               >
-                contacto.cjsmartops@gmail.com
+                info@cjsmartops.com.ar
               </a>
             </p>
           </div>
