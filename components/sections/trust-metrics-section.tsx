@@ -2,45 +2,43 @@
 
 import { motion } from "framer-motion";
 import { Activity, ShieldCheck, BarChart3, Clock, Users } from "lucide-react";
+import type { Dictionary, Lang } from "@/lib/i18n";
 
-const metrics = [
-  {
-    icon: Activity,
-    value: "8+",
-    label: "Servicios activos y 32 monitores automáticos",
-    detail: "8 systemd services + 32 timers en producción continua en el VPS de CJsmartOps",
-  },
-  {
-    icon: ShieldCheck,
-    value: "573",
-    label: "Reglas YARA en pipeline de supply chain",
-    detail: "523 reglas externas con validación de 8 capas + 50 reglas propias compiladas",
-  },
-  {
-    icon: BarChart3,
-    value: "9.3K+",
-    label: "Eventos de telemetría procesados (30 días)",
-    detail: "Vigil (4.8K reportes) + SIEM Genesis (4.4K correlaciones) — telemetría continua del ecosistema",
-  },
-  {
-    icon: Clock,
-    value: "90+",
-    label: "Días sin fallos críticos en servicios core",
-    detail: "Genesis C2, Sentinel, TR-Bot, Vigil Receiver y AEGIS Receiver operando sin interrupciones",
-  },
-  {
-    icon: Users,
-    value: "3",
-    label: "Endpoints bajo observación activa",
-    detail: "1 cliente productivo (AEGIS v2.0 + Vigil v1.1.0) + endpoints de evaluación internos",
-  },
+interface Props {
+  dict: Dictionary;
+  lang: Lang;
+}
+
+interface Metric {
+  icon: typeof Activity;
+  value: string;
+  label: string;
+  detail: string;
+}
+
+const metrics_es: Metric[] = [
+  { icon: Activity, value: "6", label: "Módulos de plataforma", detail: "AEGIS, Vigil, Genesis, CIPHER, Citadel y Sentinel en desarrollo continuo" },
+  { icon: ShieldCheck, value: "500+", label: "Reglas YARA en pipeline", detail: "Reglas externas con validación de integridad + reglas propias compiladas" },
+  { icon: BarChart3, value: "10K+", label: "Eventos de telemetría", detail: "Señales de múltiples agentes correlacionadas en tiempo real" },
+  { icon: Clock, value: "90+", label: "Días de estabilidad operativa", detail: "Servicios core operando sin interrupciones en entorno de producción" },
+  { icon: Users, value: "< 10", label: "Endpoints bajo observación", detail: "Clientes productivos y endpoints de evaluación internos" },
 ];
 
-export function TrustMetricsSection() {
+const metrics_en: Metric[] = [
+  { icon: Activity, value: "6", label: "Platform modules", detail: "AEGIS, Vigil, Genesis, CIPHER, Citadel and Sentinel in continuous development" },
+  { icon: ShieldCheck, value: "500+", label: "YARA rules in pipeline", detail: "External rules with integrity validation + compiled proprietary rules" },
+  { icon: BarChart3, value: "10K+", label: "Telemetry events", detail: "Multi-agent signals correlated in real time" },
+  { icon: Clock, value: "90+", label: "Days of operational stability", detail: "Core services operating without interruptions in production environment" },
+  { icon: Users, value: "< 10", label: "Endpoints under observation", detail: "Production clients and internal evaluation endpoints" },
+];
+
+export function TrustMetricsSection({ dict, lang }: Props) {
+  const metrics = lang === "es" ? metrics_es : metrics_en;
+  const t = dict.home.trust;
+
   return (
     <section className="relative py-24 px-6 bg-surface/20">
       <div className="pointer-events-none absolute inset-0 bg-grid opacity-15" />
-
       <div className="relative mx-auto max-w-7xl">
         <div className="mb-14 text-center">
           <motion.div
@@ -50,12 +48,10 @@ export function TrustMetricsSection() {
             transition={{ duration: 0.5 }}
           >
             <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-              Telemetría{" "}
-              <span className="text-glow">Verificada</span> en Producción
+              <span className="text-glow">{t.title}</span>
             </h2>
             <p className="mx-auto mt-3 max-w-xl text-sm leading-relaxed text-muted">
-              Métricas operacionales extraídas directamente del ecosistema
-              CJsmartOps. Sin estimaciones — datos trazables al VPS.
+              {t.subtitle}
             </p>
           </motion.div>
         </div>
@@ -75,15 +71,9 @@ export function TrustMetricsSection() {
                 <div className="mx-auto mb-3 inline-flex rounded-xl bg-accent/10 p-2.5">
                   <Icon className="h-5 w-5 text-accent" />
                 </div>
-                <div className="text-3xl font-bold tracking-tight text-foreground">
-                  {value}
-                </div>
-                <div className="mt-1.5 text-xs font-medium leading-tight text-secondary">
-                  {label}
-                </div>
-                <div className="mt-2 text-[10px] leading-relaxed text-muted/70">
-                  {detail}
-                </div>
+                <div className="text-3xl font-bold tracking-tight text-foreground">{value}</div>
+                <div className="mt-1.5 text-xs font-medium leading-tight text-secondary">{label}</div>
+                <div className="mt-2 text-[10px] leading-relaxed text-muted/70">{detail}</div>
               </div>
             </motion.div>
           ))}

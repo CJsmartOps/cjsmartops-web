@@ -1,0 +1,336 @@
+{
+  "nav": {
+    "home": "Home",
+    "platform": "Platform",
+    "products": "Products",
+    "technology": "Technology",
+    "roadmap": "Roadmap",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "lang": {
+    "es": "Español",
+    "en": "English",
+    "selector": "Language"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Cloud-Native Platform",
+      "title": "AI-Powered Operations, Observability & Trust Governance",
+      "subtitle": "CJsmartOps is a technology platform that integrates contextual observability, runtime containment and semantic intelligence for modern infrastructure.",
+      "cta_primary": "Explore Platform",
+      "cta_secondary": "Request Demo"
+    },
+    "platform_overview": {
+      "eyebrow": "Ecosystem",
+      "title": "One Platform, Six Pillars",
+      "subtitle": "Each component operates independently and correlates seamlessly. Designed for cloud-native environments."
+    },
+    "benefits": {
+      "eyebrow": "Benefits",
+      "title": "Why CJsmartOps",
+      "subtitle": "Operational advantages of a platform built for contextual observability."
+    },
+    "use_cases": {
+      "eyebrow": "Use Cases",
+      "title": "Real-World Applications",
+      "subtitle": "Scenarios where contextual observability makes the difference."
+    },
+    "architecture": {
+      "eyebrow": "Architecture",
+      "title": "How the Platform Works",
+      "subtitle": "Data flow from agents to the correlation dashboard."
+    },
+    "trust": {
+      "eyebrow": "Metrics",
+      "title": "Verified Telemetry",
+      "subtitle": "Representative figures from the CJsmartOps ecosystem. Demonstrative data."
+    },
+    "cta": {
+      "title": "Ready for Contextual Observability?",
+      "subtitle": "Discover how CJsmartOps can transform your infrastructure visibility.",
+      "button": "Request Demo"
+    }
+  },
+  "platform": {
+    "title": "Platform",
+    "subtitle": "An integrated ecosystem of agents, correlation engines and dashboards designed for contextual runtime defense.",
+    "what": {
+      "title": "What is CJsmartOps",
+      "body": "A modular platform that combines telemetry agents, containment engines and semantic analysis to provide unprecedented operational visibility. It is not a traditional SIEM nor a conventional EDR — it is a contextual observability layer."
+    },
+    "how": {
+      "title": "How It Works",
+      "body": "Agents collect process-level telemetry. Receivers normalize and route signals. The correlation engine detects patterns. CIPHER applies semantic intelligence. The dashboard presents everything in a unified view."
+    },
+    "differentiation": {
+      "title": "Differentiation",
+      "traditional": "Traditional Security",
+      "cjsmartops": "CJsmartOps",
+      "rows": [
+        { "label": "Approach", "traditional": "Static signatures", "cjsmartops": "Runtime behavior" },
+        { "label": "Visibility", "traditional": "Fragmented logs", "cjsmartops": "Unified telemetry" },
+        { "label": "Automation", "traditional": "Black box", "cjsmartops": "Explainable & reversible" },
+        { "label": "Footprint", "traditional": "High (heavy agents)", "cjsmartops": "< 40MB RAM per agent" },
+        { "label": "Scale", "traditional": "Datacenter", "cjsmartops": "Cloud-native" }
+      ]
+    }
+  },
+  "products": {
+    "title": "Products",
+    "subtitle": "Independent modules that make up the CJsmartOps platform. Each solves a specific runtime defense problem.",
+    "genesis": {
+      "name": "Genesis",
+      "tagline": "Orchestration & Central Command",
+      "purpose": "Genesis is the central nervous system of the platform. It orchestrates agents, correlates events and provides the operational dashboard.",
+      "problem": "Multi-agent environments require a central coordination point. Without orchestration, agents operate in silos and cross-endpoint correlation is impossible.",
+      "status": "production",
+      "status_label": "Production"
+    },
+    "aegis": {
+      "name": "AEGIS",
+      "tagline": "Runtime Containment",
+      "purpose": "AEGIS applies process-level containment policies. It detects fileless threats, manages quarantines and provides adaptive trust governance.",
+      "problem": "Modern attacks evade file-based detection. A containment layer is needed that operates in memory, with reversibility and audit logging.",
+      "status": "production",
+      "status_label": "Production"
+    },
+    "vigil": {
+      "name": "Vigil",
+      "tagline": "Telemetry & Drift Detection",
+      "purpose": "Vigil collects process-level signals in a non-blocking manner. It establishes behavioral baselines and detects early deviations.",
+      "problem": "Without behavioral baselines, operational anomalies and genuine threats are indistinguishable. Longitudinal telemetry with context is needed.",
+      "status": "production",
+      "status_label": "Production"
+    },
+    "cipher": {
+      "name": "CIPHER",
+      "tagline": "Semantic Intelligence",
+      "purpose": "CIPHER enriches raw telemetry with contextual reputation scoring. It maps network flows, classifies relationships and detects anomalous communication patterns.",
+      "problem": "Traditional network logs only show IPs and ports. Without semantic analysis, distributed attack patterns remain hidden in the noise.",
+      "status": "beta",
+      "status_label": "Beta"
+    },
+    "citadel": {
+      "name": "Citadel",
+      "tagline": "Cryptographic Custody",
+      "purpose": "Citadel provides secret management, at-rest encryption (Fernet AES) and key rotation for all platform components.",
+      "problem": "Secrets scattered across config files and environment variables represent a critical risk. Centralized custody with verifiable encryption is needed.",
+      "status": "alpha",
+      "status_label": "Alpha"
+    },
+    "sentinel": {
+      "name": "Sentinel",
+      "tagline": "Forensic Auditing",
+      "purpose": "Sentinel generates audit reports, verifies compliance and provides forensic capabilities for post-incident analysis.",
+      "problem": "Security teams need traceable evidence for audits and compliance. Without immutable logs, accountability is impossible.",
+      "status": "production",
+      "status_label": "Production"
+    },
+    "overview_title": "Platform Modules",
+    "overview_subtitle": "Each product is designed to operate independently and correlate with the others.",
+    "capabilities": "Capabilities",
+    "purpose_label": "Purpose",
+    "problem_label": "Problem Solved",
+    "architecture_label": "Conceptual Architecture",
+    "status_label": "Development Status"
+  },
+  "technology": {
+    "title": "Technology",
+    "subtitle": "The technical foundations that enable contextual observability, trust governance and runtime defense.",
+    "sections": {
+      "observability": {
+        "title": "Contextual Observability",
+        "body": "Unlike traditional metric-based monitoring, contextual observability captures the full runtime state: memory, process tree, network flows and filesystem interactions. This enables answering not just 'what happened' but 'why it happened'."
+      },
+      "zero_trust": {
+        "title": "Zero Trust & Trust Governance",
+        "body": "Trust is neither binary nor permanent. Our adaptive scoring model continuously evaluates each process's behavior. Scores decay toward neutrality and require sustained positive evidence to remain high."
+      },
+      "telemetry": {
+        "title": "Semantic Telemetry",
+        "body": "CIPHER transforms raw logs into actionable intelligence. It classifies TCP flows with anomaly detectors, maps relationships between processes and endpoints, and assigns contextual reputation scores to each connection."
+      },
+      "intelligence": {
+        "title": "Contextual Intelligence",
+        "body": "Longitudinal analysis over weeks of data enables establishing statistical baselines with high confidence. Drift detection identifies early deviations that static thresholds would miss."
+      },
+      "custody": {
+        "title": "Cryptographic Custody",
+        "body": "All secrets, tokens and sensitive data are encrypted with Fernet AES. Keys rotate periodically. No secrets are stored in plaintext or transmitted without encryption."
+      },
+      "impact": {
+        "title": "Low Operational Impact",
+        "body": "Agents with less than 40MB memory footprint. Non-blocking, rate-limited telemetry collection. Designed to run alongside production workloads without interference."
+      }
+    }
+  },
+  "roadmap": {
+    "title": "Roadmap",
+    "subtitle": "Public evolution vision for the platform. Planned phases subject to market validation and research advances.",
+    "phases": [
+      {
+        "period": "Q2–Q3 2026",
+        "title": "Architectural Consolidation",
+        "items": ["Multi-tenancy", "Unified API Gateway", "Centralized Authentication"]
+      },
+      {
+        "period": "Q4 2026",
+        "title": "Cryptographic Governance",
+        "items": ["Citadel v1", "Secrets Manager", "Automated Key Rotation"]
+      },
+      {
+        "period": "Q1 2027",
+        "title": "Advanced Observability",
+        "items": ["ML Pipelines", "Predictive Anomaly Detection", "Behavioral Profiles"]
+      },
+      {
+        "period": "Q2–Q3 2027",
+        "title": "Endpoint Ecosystem",
+        "items": ["Agent Auto-deploy", "Agent Marketplace", "Cloud-Native Integrations"]
+      },
+      {
+        "period": "Q4 2027+",
+        "title": "Managed Services",
+        "items": ["SOC as a Service", "Compliance Automation", "Enterprise Tier"]
+      }
+    ],
+    "disclaimer": "This roadmap reflects our vision and is subject to change based on market validation and research advances."
+  },
+  "about": {
+    "title": "About",
+    "subtitle": "CJsmartOps is a technology startup developing its own observability, trust governance and contextual defense platform.",
+    "mission": {
+      "title": "Mission",
+      "body": "Make contextual observability accessible for modern infrastructure, reducing operational noise and improving defensive explainability."
+    },
+    "vision": {
+      "title": "Vision",
+      "body": "Become the reference platform for telemetry-based cloud-native defense, with global recognition for its scientific approach and operational transparency."
+    },
+    "approach": {
+      "title": "Approach",
+      "body": "Applied research. We observe before automating. Every alert includes a complete evidence chain. Decision-making is data-driven, not vendor claims."
+    },
+    "innovation": {
+      "title": "Innovation",
+      "body": "Adaptive trust scoring, reversible containment with audit logging, 8-layer supply chain validation, and minimal-footprint agents designed for cloud-native environments."
+    },
+    "security": {
+      "title": "Security",
+      "body": "Strict secret management policies. At-rest encryption with Fernet AES. No secrets in source code. Firewall-protected infrastructure with continuous monitoring."
+    },
+    "origin": {
+      "title": "Origin",
+      "body": "CJsmartOps was founded by Carlos Suárez in Laboulaye, Córdoba, Argentina. The company operates with cloud infrastructure and a team focused on platform research and development."
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Whether you're evaluating observability platforms, looking to integrate contextual defense, or exploring collaborations — we want to hear from you.",
+    "email": {
+      "title": "Email",
+      "body": "For platform inquiries, demos or collaborations:",
+      "address": "info@cjsmartops.com.ar"
+    },
+    "location": {
+      "title": "Location",
+      "body": "We operate from Argentina with distributed cloud infrastructure.",
+      "address": "Laboulaye, Córdoba — Argentina"
+    },
+    "github": {
+      "title": "GitHub",
+      "body": "Public source code and research artifacts are available in our GitHub organization.",
+      "url": "github.com/CJsmartOps"
+    },
+    "form": {
+      "title": "Send Inquiry",
+      "name": "Name",
+      "name_placeholder": "Your name",
+      "email": "Email",
+      "email_placeholder": "you@email.com",
+      "company": "Company (optional)",
+      "company_placeholder": "Your company name",
+      "message": "Message",
+      "message_placeholder": "How can we help you?",
+      "submit": "Send Message",
+      "success": "Message sent successfully. We'll be in touch soon.",
+      "error": "Error sending. Please try again.",
+      "disclaimer": "The contact form is currently undergoing security review. Please email us directly at"
+    },
+    "demo": {
+      "title": "Request Demo",
+      "name": "Name",
+      "name_placeholder": "Your name",
+      "email": "Corporate email",
+      "email_placeholder": "you@company.com",
+      "company": "Company",
+      "company_placeholder": "Your company name",
+      "role": "Role",
+      "role_placeholder": "Your role",
+      "interest": "Interest (select all that apply)",
+      "interest_options": ["AEGIS — Containment", "Vigil — Telemetry", "Genesis — Orchestration", "CIPHER — Intelligence"],
+      "message": "Additional message",
+      "message_placeholder": "Tell us about your infrastructure and needs",
+      "submit": "Request Demo",
+      "disclaimer": "Demos are currently coordinated via email. Write to us at"
+    },
+    "partners": {
+      "title": "Partners & Investors",
+      "body": "If you are a technology partner, investor or incubator interested in CJsmartOps, contact us directly.",
+      "cta": "Write to info@cjsmartops.com.ar"
+    }
+  },
+  "footer": {
+    "tagline": "AI-powered operations, observability and trust governance platform.",
+    "platform": "Platform",
+    "company": "Company",
+    "contact": "Contact",
+    "copyright": "CJsmartOps. All rights reserved.",
+    "developed": "Developed on the CJsmartOps Platform.",
+    "products": {
+      "aegis": "AEGIS — Containment",
+      "vigil": "Vigil — Telemetry",
+      "genesis": "Genesis — Orchestration",
+      "cipher": "CIPHER — Intelligence",
+      "citadel": "Citadel — Custody",
+      "sentinel": "Sentinel — Auditing"
+    }
+  },
+  "common": {
+    "back_home": "Back to Home",
+    "read_more": "Read More",
+    "learn_more": "Learn More",
+    "get_started": "Get Started"
+  },
+  "meta": {
+    "home": {
+      "title": "CJsmartOps — AI-Powered Contextual Observability Platform",
+      "description": "CJsmartOps is a cloud-native operations, observability and trust governance platform. Runtime containment, semantic telemetry and contextual intelligence for modern infrastructure."
+    },
+    "platform": {
+      "title": "Platform — CJsmartOps",
+      "description": "Integrated ecosystem of agents, correlation engines and dashboards for contextual runtime defense."
+    },
+    "products": {
+      "title": "Products — CJsmartOps",
+      "description": "CJsmartOps platform modules: AEGIS, Vigil, Genesis, CIPHER, Citadel and Sentinel."
+    },
+    "technology": {
+      "title": "Technology — CJsmartOps",
+      "description": "Technical foundations: contextual observability, zero trust, semantic telemetry and cryptographic custody."
+    },
+    "roadmap": {
+      "title": "Roadmap — CJsmartOps",
+      "description": "CJsmartOps platform evolution vision."
+    },
+    "about": {
+      "title": "About — CJsmartOps",
+      "description": "Technology startup developing its own observability and trust governance platform."
+    },
+    "contact": {
+      "title": "Contact — CJsmartOps",
+      "description": "Contact the CJsmartOps team for platform inquiries, demos and collaborations."
+    }
+  }
+}
