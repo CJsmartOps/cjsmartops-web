@@ -71,7 +71,7 @@
         { "label": "Enfoque", "traditional": "Firmas estáticas", "cjsmartops": "Comportamiento en runtime" },
         { "label": "Visibilidad", "traditional": "Logs fragmentados", "cjsmartops": "Telemetría unificada" },
         { "label": "Automatización", "traditional": "Caja negra", "cjsmartops": "Explicable y reversible" },
-        { "label": "Impacto", "traditional": "Alto (agentes pesados)", "cjsmartops": "< 40MB RAM por agente" },
+        { "label": "Impacto", "traditional": "Alto (agentes pesados)", "cjsmartops": "Huella mínima en memoria" },
         { "label": "Escala", "traditional": "Datacenter", "cjsmartops": "Cloud-native" }
       ]
     }
@@ -114,7 +114,7 @@
     "citadel": {
       "name": "Citadel",
       "tagline": "Custodia Criptográfica",
-      "purpose": "Citadel proporciona gestión de secretos, cifrado en reposo (Fernet AES) y rotación de claves para todos los componentes de la plataforma.",
+      "purpose": "Citadel proporciona gestión de secretos, cifrado en reposo con estándares criptográficos robustos y rotación de claves para todos los componentes de la plataforma.",
       "problem": "Los secretos dispersos en archivos de configuración y variables de entorno representan un riesgo crítico. Se necesita custodia centralizada con cifrado verificable.",
       "status": "alpha",
       "status_label": "Alpha"
@@ -149,7 +149,7 @@
       },
       "telemetry": {
         "title": "Telemetría Semántica",
-        "body": "CIPHER transforma logs crudos en inteligencia accionable. Clasifica flujos TCP con detectores de anomalías, mapea relaciones entre procesos y endpoints, y asigna puntajes de reputación contextual a cada conexión."
+        "body": "CIPHER transforma logs crudos en inteligencia accionable. Clasifica flujos de red con detectores de anomalías, mapea relaciones entre procesos y endpoints, y asigna puntajes de reputación contextual a cada conexión."
       },
       "intelligence": {
         "title": "Inteligencia Contextual",
@@ -157,11 +157,11 @@
       },
       "custody": {
         "title": "Custodia Criptográfica",
-        "body": "Todos los secretos, tokens y datos sensibles se cifran con Fernet AES. Las claves rotan periódicamente. Ningún secreto se almacena en texto plano ni se transmite sin cifrado."
+        "body": "Todos los secretos, tokens y datos sensibles se cifran con estándares criptográficos robustos. Las claves rotan periódicamente. Ningún secreto se almacena en texto plano ni se transmite sin cifrado."
       },
       "impact": {
         "title": "Bajo Impacto Operacional",
-        "body": "Agentes con huella inferior a 40MB en memoria. Recolección de telemetría no bloqueante y con límite de frecuencia. Diseñado para ejecutarse junto a cargas de producción sin interferir."
+        "body": "Agentes con huella ultraligera en memoria. Recolección de telemetría no bloqueante y con límite de frecuencia. Diseñado para ejecutarse junto a cargas de producción sin interferir."
       }
     }
   },
@@ -214,11 +214,11 @@
     },
     "innovation": {
       "title": "Innovación",
-      "body": "Scoring de confianza adaptativa, contención reversible con registro de auditoría, validación de supply chain de 8 capas, y agentes con huella mínima diseñados para entornos cloud-native."
+      "body": "Scoring de confianza adaptativa, contención reversible con registro de auditoría, validación de integridad de fuentes con verificación en múltiples etapas, y agentes con huella mínima diseñados para entornos cloud-native."
     },
     "security": {
       "title": "Seguridad",
-      "body": "Políticas estrictas de gestión de secretos. Cifrado en reposo con Fernet AES. Sin secretos en código fuente. Infraestructura protegida con firewalls y monitoreo continuo."
+      "body": "La seguridad forma parte de la arquitectura de la plataforma desde su diseño. CJsmartOps adopta prácticas de desarrollo seguro, modelos de acceso controlado, principios de auditabilidad y mecanismos orientados a preservar la integridad de los datos y de la operación."
     },
     "origin": {
       "title": "Origen",

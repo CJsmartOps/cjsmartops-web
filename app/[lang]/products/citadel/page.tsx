@@ -6,7 +6,7 @@ import { ProductCapability } from "@/components/products/product-capability";
 import { GradientCard } from "@/components/ui/gradient-card";
 
 const caps_es = [
-  { Icon: Lock, title: "Cifrado Fernet AES", description: "Todos los secretos, tokens y datos sensibles cifrados con algoritmo simétrico verificable." },
+  { Icon: Lock, title: "Cifrado robusto", description: "Todos los secretos, tokens y datos sensibles cifrados con estándares criptográficos de nivel empresarial." },
   { Icon: Key, title: "Gestión centralizada de secretos", description: "Un único punto de custodia para todas las credenciales de la plataforma." },
   { Icon: RefreshCw, title: "Rotación automática de claves", description: "Claves que rotan periódicamente sin intervención manual ni exposición de secretos." },
   { Icon: Shield, title: "Sin secretos en texto plano", description: "Ningún secreto se almacena en código fuente, variables de entorno ni archivos de configuración." },
@@ -15,7 +15,7 @@ const caps_es = [
 ];
 
 const caps_en = [
-  { Icon: Lock, title: "Fernet AES encryption", description: "All secrets, tokens and sensitive data encrypted with verifiable symmetric algorithm." },
+  { Icon: Lock, title: "Robust encryption", description: "All secrets, tokens and sensitive data encrypted with enterprise-grade cryptographic standards." },
   { Icon: Key, title: "Centralized secret management", description: "Single custody point for all platform credentials." },
   { Icon: RefreshCw, title: "Automatic key rotation", description: "Keys that rotate periodically without manual intervention or secret exposure." },
   { Icon: Shield, title: "No plaintext secrets", description: "No secrets stored in source code, environment variables or configuration files." },
