@@ -11,6 +11,7 @@ function getLocale(request: NextRequest): string {
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
+  // Skip internal Next.js paths and static files
   if (
     pathname.startsWith("/_next") ||
     pathname.startsWith("/api") ||
@@ -22,18 +23,12 @@ export function middleware(request: NextRequest) {
     return NextResponse.next();
   }
 
-  const pathnameHasLocale = locales.some(
-    (locale) => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`
-  );
+  // If path already has locale prefix, skip
+  if (locales.some((l) => pathname.startsWith(`/${l}/`) || pathname === `/${l}`)) {
+    return NextResponse.next();
+  }
 
-  if (pathnameHasLocale) return NextResponse.next();
-
+  // Redirect to default locale
   const locale = getLocale(request);
-  const newUrl = new URL(`/${locale}${pathname}`, request.url);
-  newUrl.search = request.nextUrl.search;
-  return NextResponse.redirect(newUrl);
+  return NextResponse.redirect(new URL(`/${locale}${pathname}`, request.url));
 }
-
-export const config = {
-  matcher: ["/((?!api|_next/static|_next/image|favicon.ico|sitemap.xml|robots.txt).*)"],
-};
