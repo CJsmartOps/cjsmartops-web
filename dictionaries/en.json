@@ -68,11 +68,31 @@
       "traditional": "Traditional Security",
       "cjsmartops": "CJsmartOps",
       "rows": [
-        { "label": "Approach", "traditional": "Static signatures", "cjsmartops": "Runtime behavior" },
-        { "label": "Visibility", "traditional": "Fragmented logs", "cjsmartops": "Unified telemetry" },
-        { "label": "Automation", "traditional": "Black box", "cjsmartops": "Explainable & reversible" },
-        { "label": "Footprint", "traditional": "High (heavy agents)", "cjsmartops": "Minimal memory footprint" },
-        { "label": "Scale", "traditional": "Datacenter", "cjsmartops": "Cloud-native" }
+        {
+          "label": "Approach",
+          "traditional": "Static signatures",
+          "cjsmartops": "Runtime behavior"
+        },
+        {
+          "label": "Visibility",
+          "traditional": "Fragmented logs",
+          "cjsmartops": "Unified telemetry"
+        },
+        {
+          "label": "Automation",
+          "traditional": "Black box",
+          "cjsmartops": "Explainable & reversible"
+        },
+        {
+          "label": "Footprint",
+          "traditional": "High (heavy agents)",
+          "cjsmartops": "Minimal memory footprint"
+        },
+        {
+          "label": "Scale",
+          "traditional": "Datacenter",
+          "cjsmartops": "Cloud-native"
+        }
       ]
     }
   },
@@ -172,27 +192,47 @@
       {
         "period": "Q2–Q3 2026",
         "title": "Architectural Consolidation",
-        "items": ["Multi-tenancy", "Unified API Gateway", "Centralized Authentication"]
+        "items": [
+          "Multi-tenancy",
+          "Unified API Gateway",
+          "Centralized Authentication"
+        ]
       },
       {
         "period": "Q4 2026",
         "title": "Cryptographic Governance",
-        "items": ["Citadel v1", "Secrets Manager", "Automated Key Rotation"]
+        "items": [
+          "Citadel v1",
+          "Secrets Manager",
+          "Automated Key Rotation"
+        ]
       },
       {
         "period": "Q1 2027",
         "title": "Advanced Observability",
-        "items": ["ML Pipelines", "Predictive Anomaly Detection", "Behavioral Profiles"]
+        "items": [
+          "ML Pipelines",
+          "Predictive Anomaly Detection",
+          "Behavioral Profiles"
+        ]
       },
       {
         "period": "Q2–Q3 2027",
         "title": "Endpoint Ecosystem",
-        "items": ["Agent Auto-deploy", "Agent Marketplace", "Cloud-Native Integrations"]
+        "items": [
+          "Agent Auto-deploy",
+          "Agent Marketplace",
+          "Cloud-Native Integrations"
+        ]
       },
       {
         "period": "Q4 2027+",
         "title": "Managed Services",
-        "items": ["SOC as a Service", "Compliance Automation", "Enterprise Tier"]
+        "items": [
+          "SOC as a Service",
+          "Compliance Automation",
+          "Enterprise Tier"
+        ]
       }
     ],
     "disclaimer": "This roadmap reflects our vision and is subject to change based on market validation and research advances."
@@ -222,7 +262,13 @@
     },
     "origin": {
       "title": "Origin",
-      "body": "CJsmartOps was founded by Carlos Suárez in Laboulaye, Córdoba, Argentina. The company operates with cloud infrastructure and a team focused on platform research and development."
+      "body": "Founded by Carlos Suárez in Argentina. CJsmartOps operates with cloud infrastructure and a team focused on platform research and development."
+    },
+    "leadership": {
+      "title": "Leadership",
+      "name": "Carlos Javier Suárez",
+      "role": "Founder & CEO",
+      "bio": "Computer Systems Technician with academic foundations in Systems Analysis and Programming. Focused on observability, operational security, automation and the development of intelligent technology platforms. Currently leading the evolution of CJsmartOps, an AI-powered observability and trust governance platform."
     }
   },
   "contact": {
@@ -236,7 +282,7 @@
     "location": {
       "title": "Location",
       "body": "We operate from Argentina with distributed cloud infrastructure.",
-      "address": "Laboulaye, Córdoba — Argentina"
+      "address": "Argentina"
     },
     "github": {
       "title": "GitHub",
@@ -269,7 +315,12 @@
       "role": "Role",
       "role_placeholder": "Your role",
       "interest": "Interest (select all that apply)",
-      "interest_options": ["AEGIS — Containment", "Vigil — Telemetry", "Genesis — Orchestration", "CIPHER — Intelligence"],
+      "interest_options": [
+        "AEGIS — Containment",
+        "Vigil — Telemetry",
+        "Genesis — Orchestration",
+        "CIPHER — Intelligence"
+      ],
       "message": "Additional message",
       "message_placeholder": "Tell us about your infrastructure and needs",
       "submit": "Request Demo",
