@@ -6,21 +6,21 @@ import { ProductCapability } from "@/components/products/product-capability";
 import { GradientCard } from "@/components/ui/gradient-card";
 
 const caps_es = [
-  { icon: Lock, title: "Cifrado Fernet AES", description: "Todos los secretos, tokens y datos sensibles cifrados con algoritmo simétrico verificable." },
-  { icon: Key, title: "Gestión centralizada de secretos", description: "Un único punto de custodia para todas las credenciales de la plataforma." },
-  { icon: RefreshCw, title: "Rotación automática de claves", description: "Claves que rotan periódicamente sin intervención manual ni exposición de secretos." },
-  { icon: Shield, title: "Sin secretos en texto plano", description: "Ningún secreto se almacena en código fuente, variables de entorno ni archivos de configuración." },
-  { icon: Database, title: "Cifrado en reposo", description: "Datos de clientes y configuración sensible protegidos con cifrado en disco." },
-  { icon: Eye, title: "Auditoría de acceso", description: "Registro de cada acceso a secretos con trazabilidad completa para cumplimiento." },
+  { Icon: Lock, title: "Cifrado Fernet AES", description: "Todos los secretos, tokens y datos sensibles cifrados con algoritmo simétrico verificable." },
+  { Icon: Key, title: "Gestión centralizada de secretos", description: "Un único punto de custodia para todas las credenciales de la plataforma." },
+  { Icon: RefreshCw, title: "Rotación automática de claves", description: "Claves que rotan periódicamente sin intervención manual ni exposición de secretos." },
+  { Icon: Shield, title: "Sin secretos en texto plano", description: "Ningún secreto se almacena en código fuente, variables de entorno ni archivos de configuración." },
+  { Icon: Database, title: "Cifrado en reposo", description: "Datos de clientes y configuración sensible protegidos con cifrado en disco." },
+  { Icon: Eye, title: "Auditoría de acceso", description: "Registro de cada acceso a secretos con trazabilidad completa para cumplimiento." },
 ];
 
 const caps_en = [
-  { icon: Lock, title: "Fernet AES encryption", description: "All secrets, tokens and sensitive data encrypted with verifiable symmetric algorithm." },
-  { icon: Key, title: "Centralized secret management", description: "Single custody point for all platform credentials." },
-  { icon: RefreshCw, title: "Automatic key rotation", description: "Keys that rotate periodically without manual intervention or secret exposure." },
-  { icon: Shield, title: "No plaintext secrets", description: "No secrets stored in source code, environment variables or configuration files." },
-  { icon: Database, title: "At-rest encryption", description: "Client data and sensitive configuration protected with disk encryption." },
-  { icon: Eye, title: "Access auditing", description: "Logging of every secret access with full traceability for compliance." },
+  { Icon: Lock, title: "Fernet AES encryption", description: "All secrets, tokens and sensitive data encrypted with verifiable symmetric algorithm." },
+  { Icon: Key, title: "Centralized secret management", description: "Single custody point for all platform credentials." },
+  { Icon: RefreshCw, title: "Automatic key rotation", description: "Keys that rotate periodically without manual intervention or secret exposure." },
+  { Icon: Shield, title: "No plaintext secrets", description: "No secrets stored in source code, environment variables or configuration files." },
+  { Icon: Database, title: "At-rest encryption", description: "Client data and sensitive configuration protected with disk encryption." },
+  { Icon: Eye, title: "Access auditing", description: "Logging of every secret access with full traceability for compliance." },
 ];
 
 interface Props { params: Promise<{ lang: string }> }
@@ -46,7 +46,9 @@ export default async function CitadelPage({ params }: Props) {
           <div className="rounded-2xl border border-border bg-surface/40 p-8 backdrop-blur-sm">
             <h2 className="mb-6 text-lg font-semibold text-foreground">{dict.products.capabilities}</h2>
             <div className="grid gap-5 sm:grid-cols-2">
-              {caps.map((c, i) => <ProductCapability key={c.title} icon={c.icon} title={c.title} description={c.description} delay={i * 0.08} />)}
+              {caps.map(({ Icon, title, description }, i) => (
+                <ProductCapability key={title} icon={<Icon className="h-4 w-4 text-accent" />} title={title} description={description} delay={i * 0.08} />
+              ))}
             </div>
           </div>
         </div>

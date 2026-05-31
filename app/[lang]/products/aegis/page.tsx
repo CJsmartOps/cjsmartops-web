@@ -6,21 +6,21 @@ import { ProductCapability } from "@/components/products/product-capability";
 import { GradientCard } from "@/components/ui/gradient-card";
 
 const caps_es = [
-  { icon: Shield, title: "Contención a nivel proceso", description: "Aislamiento de procesos sospechosos con políticas reversibles y registro de auditoría completo." },
-  { icon: Zap, title: "Detección de amenazas fileless", description: "Análisis de memfd, LD_PRELOAD y binarios eliminados cada 60 segundos." },
-  { icon: Globe, title: "RAM Guard", description: "Monitoreo continuo de memoria para detectar inyecciones y manipulaciones no autorizadas." },
-  { icon: Bug, title: "Whiteliast dinámica", description: "Gestión automática de cuarentena con falsos positivos conocidos y aprendizaje continuo." },
-  { icon: FileText, title: "Registro de auditoría inmutable", description: "Cadenas de eventos firmadas con HMAC-SHA256. Total trazabilidad de cada acción." },
-  { icon: PackageOpen, title: "Gobernanza de confianza adaptativa", description: "Scores que evolucionan con el comportamiento. Sin confianza binaria ni permanente." },
+  { Icon: Shield, title: "Contención a nivel proceso", description: "Aislamiento de procesos sospechosos con políticas reversibles y registro de auditoría completo." },
+  { Icon: Zap, title: "Detección de amenazas fileless", description: "Análisis de memfd, LD_PRELOAD y binarios eliminados cada 60 segundos." },
+  { Icon: Globe, title: "RAM Guard", description: "Monitoreo continuo de memoria para detectar inyecciones y manipulaciones no autorizadas." },
+  { Icon: Bug, title: "Whiteliast dinámica", description: "Gestión automática de cuarentena con falsos positivos conocidos y aprendizaje continuo." },
+  { Icon: FileText, title: "Registro de auditoría inmutable", description: "Cadenas de eventos firmadas con HMAC-SHA256. Total trazabilidad de cada acción." },
+  { Icon: PackageOpen, title: "Gobernanza de confianza adaptativa", description: "Scores que evolucionan con el comportamiento. Sin confianza binaria ni permanente." },
 ];
 
 const caps_en = [
-  { icon: Shield, title: "Process-level containment", description: "Suspicious process isolation with reversible policies and complete audit logging." },
-  { icon: Zap, title: "Fileless threat detection", description: "Memfd, LD_PRELOAD and deleted binary analysis every 60 seconds." },
-  { icon: Globe, title: "RAM Guard", description: "Continuous memory monitoring to detect unauthorized injections and manipulations." },
-  { icon: Bug, title: "Dynamic whitelisting", description: "Automatic quarantine management with known false positives and continuous learning." },
-  { icon: FileText, title: "Immutable audit logging", description: "HMAC-SHA256 signed event chains. Full traceability for every action." },
-  { icon: PackageOpen, title: "Adaptive trust governance", description: "Scores that evolve with behavior. No binary or permanent trust." },
+  { Icon: Shield, title: "Process-level containment", description: "Suspicious process isolation with reversible policies and complete audit logging." },
+  { Icon: Zap, title: "Fileless threat detection", description: "Memfd, LD_PRELOAD and deleted binary analysis every 60 seconds." },
+  { Icon: Globe, title: "RAM Guard", description: "Continuous memory monitoring to detect unauthorized injections and manipulations." },
+  { Icon: Bug, title: "Dynamic whitelisting", description: "Automatic quarantine management with known false positives and continuous learning." },
+  { Icon: FileText, title: "Immutable audit logging", description: "HMAC-SHA256 signed event chains. Full traceability for every action." },
+  { Icon: PackageOpen, title: "Adaptive trust governance", description: "Scores that evolve with behavior. No binary or permanent trust." },
 ];
 
 interface Props { params: Promise<{ lang: string }> }
@@ -52,8 +52,14 @@ export default async function AegisPage({ params }: Props) {
           <div className="rounded-2xl border border-border bg-surface/40 p-8 backdrop-blur-sm">
             <h2 className="mb-6 text-lg font-semibold text-foreground">{dict.products.capabilities}</h2>
             <div className="grid gap-5 sm:grid-cols-2">
-              {caps.map((c, i) => (
-                <ProductCapability key={c.title} icon={c.icon} title={c.title} description={c.description} delay={i * 0.08} />
+              {caps.map(({ Icon, title, description }, i) => (
+                <ProductCapability
+                  key={title}
+                  icon={<Icon className="h-4 w-4 text-accent" />}
+                  title={title}
+                  description={description}
+                  delay={i * 0.08}
+                />
               ))}
             </div>
           </div>
