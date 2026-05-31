@@ -1,0 +1,336 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "platform": "Plataforma",
+    "products": "Productos",
+    "technology": "Tecnología",
+    "roadmap": "Roadmap",
+    "about": "Nosotros",
+    "contact": "Contacto"
+  },
+  "lang": {
+    "es": "Español",
+    "en": "English",
+    "selector": "Idioma"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Plataforma Cloud-Native",
+      "title": "Operaciones, Observabilidad y Gobernanza de Confianza Impulsada por IA",
+      "subtitle": "CJsmartOps es una plataforma tecnológica que integra observabilidad contextual, contención en runtime e inteligencia semántica para infraestructura moderna.",
+      "cta_primary": "Explorar Plataforma",
+      "cta_secondary": "Solicitar Demo"
+    },
+    "platform_overview": {
+      "eyebrow": "Ecosistema",
+      "title": "Una Plataforma, Seis Pilares",
+      "subtitle": "Cada componente opera de forma independiente y se correlaciona sin fricción. Diseñados para entornos cloud-native."
+    },
+    "benefits": {
+      "eyebrow": "Beneficios",
+      "title": "Por Qué CJsmartOps",
+      "subtitle": "Ventajas operativas de una plataforma diseñada para la observabilidad contextual."
+    },
+    "use_cases": {
+      "eyebrow": "Casos de Uso",
+      "title": "Aplicaciones en el Mundo Real",
+      "subtitle": "Escenarios donde la observabilidad contextual marca la diferencia."
+    },
+    "architecture": {
+      "eyebrow": "Arquitectura",
+      "title": "Cómo Funciona la Plataforma",
+      "subtitle": "Flujo de datos desde los agentes hasta el dashboard de correlación."
+    },
+    "trust": {
+      "eyebrow": "Métricas",
+      "title": "Telemetría Verificada",
+      "subtitle": "Cifras representativas del ecosistema CJsmartOps. Datos demostrativos."
+    },
+    "cta": {
+      "title": "¿Listo para Observabilidad Contextual?",
+      "subtitle": "Descubrí cómo CJsmartOps puede transformar la visibilidad de tu infraestructura.",
+      "button": "Solicitar Demo"
+    }
+  },
+  "platform": {
+    "title": "Plataforma",
+    "subtitle": "Un ecosistema integrado de agentes, motores de correlación y dashboards diseñado para la defensa contextual en runtime.",
+    "what": {
+      "title": "Qué es CJsmartOps",
+      "body": "Una plataforma modular que combina agentes de telemetría, motores de contención y análisis semántico para proporcionar visibilidad operacional sin precedentes. No es un SIEM tradicional ni un EDR convencional — es una capa de observabilidad contextual."
+    },
+    "how": {
+      "title": "Cómo Funciona",
+      "body": "Los agentes recolectan telemetría a nivel de proceso. Los receivers normalizan y enrutan las señales. El correlation engine detecta patrones. CIPHER aplica inteligencia semántica. El dashboard presenta todo en una vista unificada."
+    },
+    "differentiation": {
+      "title": "Diferenciación",
+      "traditional": "Seguridad Tradicional",
+      "cjsmartops": "CJsmartOps",
+      "rows": [
+        { "label": "Enfoque", "traditional": "Firmas estáticas", "cjsmartops": "Comportamiento en runtime" },
+        { "label": "Visibilidad", "traditional": "Logs fragmentados", "cjsmartops": "Telemetría unificada" },
+        { "label": "Automatización", "traditional": "Caja negra", "cjsmartops": "Explicable y reversible" },
+        { "label": "Impacto", "traditional": "Alto (agentes pesados)", "cjsmartops": "< 40MB RAM por agente" },
+        { "label": "Escala", "traditional": "Datacenter", "cjsmartops": "Cloud-native" }
+      ]
+    }
+  },
+  "products": {
+    "title": "Productos",
+    "subtitle": "Módulos independientes que conforman la plataforma CJsmartOps. Cada uno resuelve un problema específico de la defensa en runtime.",
+    "genesis": {
+      "name": "Genesis",
+      "tagline": "Orquestación y Comando Central",
+      "purpose": "Genesis es el sistema nervioso central de la plataforma. Orquesta agentes, correlaciona eventos y proporciona el dashboard operacional.",
+      "problem": "Los entornos multi-agente requieren un punto central de coordinación. Sin orquestación, los agentes operan en silos y la correlación entre endpoints es imposible.",
+      "status": "production",
+      "status_label": "Producción"
+    },
+    "aegis": {
+      "name": "AEGIS",
+      "tagline": "Contención en Runtime",
+      "purpose": "AEGIS aplica políticas de contención a nivel de proceso. Detecta amenazas fileless, gestiona cuarentenas y proporciona gobernanza de confianza adaptativa.",
+      "problem": "Los ataques modernos evaden la detección basada en archivos. Se necesita una capa de contención que opere en memoria, con reversibilidad y registro de auditoría.",
+      "status": "production",
+      "status_label": "Producción"
+    },
+    "vigil": {
+      "name": "Vigil",
+      "tagline": "Telemetría y Detección de Drift",
+      "purpose": "Vigil recolecta señales a nivel de proceso de forma no bloqueante. Establece líneas base de comportamiento y detecta desviaciones tempranas.",
+      "problem": "Sin líneas base de comportamiento, las anomalías operativas y las amenazas genuinas son indistinguibles. Se necesita telemetría longitudinal con contexto.",
+      "status": "production",
+      "status_label": "Producción"
+    },
+    "cipher": {
+      "name": "CIPHER",
+      "tagline": "Inteligencia Semántica",
+      "purpose": "CIPHER enriquece la telemetría cruda con scoring de reputación contextual. Mapea flujos de red, clasifica relaciones y detecta patrones de comunicación anómalos.",
+      "problem": "Los logs de red tradicionales solo muestran IPs y puertos. Sin análisis semántico, los patrones de ataque distribuido permanecen ocultos en el ruido.",
+      "status": "beta",
+      "status_label": "Beta"
+    },
+    "citadel": {
+      "name": "Citadel",
+      "tagline": "Custodia Criptográfica",
+      "purpose": "Citadel proporciona gestión de secretos, cifrado en reposo (Fernet AES) y rotación de claves para todos los componentes de la plataforma.",
+      "problem": "Los secretos dispersos en archivos de configuración y variables de entorno representan un riesgo crítico. Se necesita custodia centralizada con cifrado verificable.",
+      "status": "alpha",
+      "status_label": "Alpha"
+    },
+    "sentinel": {
+      "name": "Sentinel",
+      "tagline": "Auditoría Forense",
+      "purpose": "Sentinel genera informes de auditoría, verifica cumplimiento y proporciona capacidades forenses para análisis post-incidente.",
+      "problem": "Los equipos de seguridad necesitan evidencia trazable para auditorías y cumplimiento. Sin registros inmutables, la rendición de cuentas es imposible.",
+      "status": "production",
+      "status_label": "Producción"
+    },
+    "overview_title": "Módulos de la Plataforma",
+    "overview_subtitle": "Cada producto está diseñado para operar de forma independiente y correlacionarse con los demás.",
+    "capabilities": "Capacidades",
+    "purpose_label": "Propósito",
+    "problem_label": "Problema que Resuelve",
+    "architecture_label": "Arquitectura Conceptual",
+    "status_label": "Estado de Desarrollo"
+  },
+  "technology": {
+    "title": "Tecnología",
+    "subtitle": "Los fundamentos técnicos que hacen posible la observabilidad contextual, la gobernanza de confianza y la defensa en runtime.",
+    "sections": {
+      "observability": {
+        "title": "Observabilidad Contextual",
+        "body": "A diferencia del monitoreo tradicional basado en métricas, la observabilidad contextual captura el estado completo del runtime: memoria, árbol de procesos, flujos de red e interacciones con el sistema de archivos. Esto permite responder no solo 'qué pasó' sino 'por qué pasó'."
+      },
+      "zero_trust": {
+        "title": "Zero Trust y Gobernanza de Confianza",
+        "body": "La confianza no es binaria ni permanente. Nuestro modelo de scoring adaptativo evalúa continuamente el comportamiento de cada proceso. Los puntajes decaen hacia la neutralidad y requieren evidencia positiva sostenida para mantenerse altos."
+      },
+      "telemetry": {
+        "title": "Telemetría Semántica",
+        "body": "CIPHER transforma logs crudos en inteligencia accionable. Clasifica flujos TCP con detectores de anomalías, mapea relaciones entre procesos y endpoints, y asigna puntajes de reputación contextual a cada conexión."
+      },
+      "intelligence": {
+        "title": "Inteligencia Contextual",
+        "body": "El análisis longitudinal sobre semanas de datos permite establecer líneas base estadísticas con alta confianza. La detección de drift identifica desviaciones tempranas que los umbrales estáticos no capturarían."
+      },
+      "custody": {
+        "title": "Custodia Criptográfica",
+        "body": "Todos los secretos, tokens y datos sensibles se cifran con Fernet AES. Las claves rotan periódicamente. Ningún secreto se almacena en texto plano ni se transmite sin cifrado."
+      },
+      "impact": {
+        "title": "Bajo Impacto Operacional",
+        "body": "Agentes con huella inferior a 40MB en memoria. Recolección de telemetría no bloqueante y con límite de frecuencia. Diseñado para ejecutarse junto a cargas de producción sin interferir."
+      }
+    }
+  },
+  "roadmap": {
+    "title": "Roadmap",
+    "subtitle": "Visión pública de evolución de la plataforma. Fases planificadas sujetas a validación de mercado y avances de investigación.",
+    "phases": [
+      {
+        "period": "Q2–Q3 2026",
+        "title": "Consolidación Arquitectónica",
+        "items": ["Multi-tenancy", "API Gateway unificado", "Autenticación centralizada"]
+      },
+      {
+        "period": "Q4 2026",
+        "title": "Gobernanza Criptográfica",
+        "items": ["Citadel v1", "Gestor de secretos", "Rotación automática de claves"]
+      },
+      {
+        "period": "Q1 2027",
+        "title": "Observabilidad Avanzada",
+        "items": ["Pipelines de ML", "Detección de anomalías predictivas", "Perfiles de comportamiento"]
+      },
+      {
+        "period": "Q2–Q3 2027",
+        "title": "Endpoint Ecosystem",
+        "items": ["Auto-deploy de agentes", "Agent Marketplace", "Integraciones cloud nativas"]
+      },
+      {
+        "period": "Q4 2027+",
+        "title": "Servicios Gestionados",
+        "items": ["SOC as a Service", "Automatización de cumplimiento", "Tier Enterprise"]
+      }
+    ],
+    "disclaimer": "Este roadmap refleja nuestra visión y está sujeto a cambios según validación de mercado y avances de investigación."
+  },
+  "about": {
+    "title": "Nosotros",
+    "subtitle": "CJsmartOps es una startup tecnológica que desarrolla una plataforma propia de observabilidad, gobernanza de confianza y defensa contextual.",
+    "mission": {
+      "title": "Misión",
+      "body": "Hacer la observabilidad contextual accesible para infraestructura moderna, reduciendo el ruido operacional y mejorando la explicabilidad defensiva."
+    },
+    "vision": {
+      "title": "Visión",
+      "body": "Ser la plataforma de referencia en defensa cloud-native basada en telemetría, con reconocimiento global por su enfoque científico y transparencia operacional."
+    },
+    "approach": {
+      "title": "Enfoque",
+      "body": "Investigación aplicada. Observamos antes de automatizar. Cada alerta incluye una cadena de evidencia completa. La toma de decisiones se basa en datos, no en afirmaciones de proveedores."
+    },
+    "innovation": {
+      "title": "Innovación",
+      "body": "Scoring de confianza adaptativa, contención reversible con registro de auditoría, validación de supply chain de 8 capas, y agentes con huella mínima diseñados para entornos cloud-native."
+    },
+    "security": {
+      "title": "Seguridad",
+      "body": "Políticas estrictas de gestión de secretos. Cifrado en reposo con Fernet AES. Sin secretos en código fuente. Infraestructura protegida con firewalls y monitoreo continuo."
+    },
+    "origin": {
+      "title": "Origen",
+      "body": "CJsmartOps fue fundada por Carlos Suárez en Laboulaye, Córdoba, Argentina. La empresa opera con infraestructura cloud y un equipo enfocado en investigación y desarrollo de plataforma."
+    }
+  },
+  "contact": {
+    "title": "Contacto",
+    "subtitle": "Ya sea que estés evaluando plataformas de observabilidad, buscando integrar defensa contextual o explorando colaboraciones — queremos escucharte.",
+    "email": {
+      "title": "Correo Electrónico",
+      "body": "Para consultas sobre la plataforma, demostraciones o colaboraciones:",
+      "address": "info@cjsmartops.com.ar"
+    },
+    "location": {
+      "title": "Ubicación",
+      "body": "Operamos desde Argentina con infraestructura cloud distribuida.",
+      "address": "Laboulaye, Córdoba — Argentina"
+    },
+    "github": {
+      "title": "GitHub",
+      "body": "El código fuente público y los artefactos de investigación están disponibles en nuestra organización de GitHub.",
+      "url": "github.com/CJsmartOps"
+    },
+    "form": {
+      "title": "Enviar Consulta",
+      "name": "Nombre",
+      "name_placeholder": "Tu nombre",
+      "email": "Email",
+      "email_placeholder": "tu@email.com",
+      "company": "Empresa (opcional)",
+      "company_placeholder": "Nombre de tu empresa",
+      "message": "Mensaje",
+      "message_placeholder": "¿En qué podemos ayudarte?",
+      "submit": "Enviar Mensaje",
+      "success": "Mensaje enviado correctamente. Te contactaremos pronto.",
+      "error": "Error al enviar. Por favor intentá nuevamente.",
+      "disclaimer": "Actualmente el formulario de contacto se encuentra en revisión de seguridad. Por favor envianos un email directamente a"
+    },
+    "demo": {
+      "title": "Solicitar Demostración",
+      "name": "Nombre",
+      "name_placeholder": "Tu nombre",
+      "email": "Email corporativo",
+      "email_placeholder": "tu@empresa.com",
+      "company": "Empresa",
+      "company_placeholder": "Nombre de tu empresa",
+      "role": "Cargo",
+      "role_placeholder": "Tu cargo",
+      "interest": "Interés (seleccioná todos los que correspondan)",
+      "interest_options": ["AEGIS — Contención", "Vigil — Telemetría", "Genesis — Orquestación", "CIPHER — Inteligencia"],
+      "message": "Mensaje adicional",
+      "message_placeholder": "Contanos sobre tu infraestructura y necesidades",
+      "submit": "Solicitar Demo",
+      "disclaimer": "Actualmente las demostraciones se coordinan por email. Escribinos a"
+    },
+    "partners": {
+      "title": "Partners e Inversores",
+      "body": "Si sos un partner tecnológico, inversor o incubadora interesado en CJsmartOps, contactanos directamente.",
+      "cta": "Escribinos a info@cjsmartops.com.ar"
+    }
+  },
+  "footer": {
+    "tagline": "Plataforma de operaciones, observabilidad y gobernanza de confianza impulsada por IA.",
+    "platform": "Plataforma",
+    "company": "Empresa",
+    "contact": "Contacto",
+    "copyright": "CJsmartOps. Todos los derechos reservados.",
+    "developed": "Desarrollado sobre la Plataforma CJsmartOps.",
+    "products": {
+      "aegis": "AEGIS — Contención",
+      "vigil": "Vigil — Telemetría",
+      "genesis": "Genesis — Orquestación",
+      "cipher": "CIPHER — Inteligencia",
+      "citadel": "Citadel — Custodia",
+      "sentinel": "Sentinel — Auditoría"
+    }
+  },
+  "common": {
+    "back_home": "Volver al Inicio",
+    "read_more": "Leer Más",
+    "learn_more": "Más Información",
+    "get_started": "Comenzar"
+  },
+  "meta": {
+    "home": {
+      "title": "CJsmartOps — Plataforma de Observabilidad Contextual Impulsada por IA",
+      "description": "CJsmartOps es una plataforma cloud-native de operaciones, observabilidad y gobernanza de confianza. Contención en runtime, telemetría semántica e inteligencia contextual para infraestructura moderna."
+    },
+    "platform": {
+      "title": "Plataforma — CJsmartOps",
+      "description": "Ecosistema integrado de agentes, motores de correlación y dashboards para defensa contextual en runtime."
+    },
+    "products": {
+      "title": "Productos — CJsmartOps",
+      "description": "Módulos de la plataforma CJsmartOps: AEGIS, Vigil, Genesis, CIPHER, Citadel y Sentinel."
+    },
+    "technology": {
+      "title": "Tecnología — CJsmartOps",
+      "description": "Fundamentos técnicos: observabilidad contextual, zero trust, telemetría semántica y custodia criptográfica."
+    },
+    "roadmap": {
+      "title": "Roadmap — CJsmartOps",
+      "description": "Visión de evolución de la plataforma CJsmartOps."
+    },
+    "about": {
+      "title": "Nosotros — CJsmartOps",
+      "description": "Startup tecnológica que desarrolla una plataforma propia de observabilidad y gobernanza de confianza."
+    },
+    "contact": {
+      "title": "Contacto — CJsmartOps",
+      "description": "Contactá al equipo de CJsmartOps para consultas sobre la plataforma, demostraciones y colaboraciones."
+    }
+  }
+}
