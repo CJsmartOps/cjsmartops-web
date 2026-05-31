@@ -3,8 +3,15 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { ArrowRight, Activity } from "lucide-react";
+import type { Lang, Dictionary } from "@/lib/i18n";
 
-export function HeroSection() {
+interface Props {
+  dict: Dictionary;
+  lang: Lang;
+}
+
+export function HeroSection({ dict, lang }: Props) {
+  const h = dict.home.hero;
   return (
     <section className="relative flex min-h-screen items-center justify-center overflow-hidden px-6 pt-16">
       <div className="pointer-events-none absolute inset-0 bg-grid" />
@@ -22,35 +29,31 @@ export function HeroSection() {
           <div className="mb-8">
             <span className="inline-flex items-center gap-2 rounded-full border border-border-medium bg-glass px-4 py-1.5 text-xs font-medium tracking-widest text-glow uppercase backdrop-blur-md notranslate" translate="no">
               <Activity className="h-3 w-3" />
-              Contextual Runtime Defense
+              {h.eyebrow}
             </span>
           </div>
 
-          <h1 className="text-balance text-5xl font-bold leading-[1.08] tracking-tight text-foreground sm:text-6xl lg:text-7xl">
-            Seguridad Basada en{" "}
-            <span className="bg-gradient-to-r from-accent via-glow to-accent bg-clip-text text-transparent">
-              Observabilidad
-            </span>{" "}
-            para Infraestructura Moderna
+          <h1 className="text-balance text-4xl font-bold leading-[1.08] tracking-tight text-foreground sm:text-5xl lg:text-6xl">
+            {h.title}
           </h1>
 
           <p className="mx-auto mt-6 max-w-2xl text-pretty text-base leading-relaxed text-secondary sm:text-lg">
-            CJsmartOps combina gobernanza de runtime, telemetría semántica y análisis de confianza adaptativa para reducir el ruido operacional y mejorar la explicabilidad defensiva.
+            {h.subtitle}
           </p>
 
           <div className="mt-10 flex items-center justify-center gap-4">
             <Link
-              href="#architecture"
+              href={`/${lang}/platform`}
               className="group inline-flex items-center gap-2 rounded-full bg-accent px-7 py-3 text-sm font-medium text-white transition-all duration-300 hover:bg-accent/90 hover:shadow-[0_0_32px_rgba(37,99,235,0.35)]"
             >
-              Arquitectura
+              {h.cta_primary}
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
             </Link>
             <Link
-              href="#research"
+              href={`/${lang}/contact`}
               className="rounded-full border border-border-medium bg-surface/40 px-7 py-3 text-sm font-medium text-secondary backdrop-blur-sm transition-all duration-300 hover:border-border-glow hover:bg-surface/60 hover:text-foreground"
             >
-              Plataforma de Investigación
+              {h.cta_secondary}
             </Link>
           </div>
         </motion.div>
