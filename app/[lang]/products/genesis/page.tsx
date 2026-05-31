@@ -10,8 +10,8 @@ const caps_es = [
   { Icon: BarChart3, title: "Dashboard operacional", description: "Vista unificada de telemetría, alertas y estado de agentes en tiempo real." },
   { Icon: GitBranch, title: "Correlación de eventos", description: "Motor de correlación que conecta señales entre agentes para revelar cadenas de ataque." },
   { Icon: Zap, title: "Auto-remediación", description: "Respuesta automatizada basada en evidencia. Cada acción incluye justificación y trazabilidad." },
-  { Icon: Shield, title: "Control unificado", description: "Comando y control centralizado con comunicación segura y autenticación." },
-  { Icon: Network, title: "API de integración", description: "Interfaz programática para integración con sistemas externos y automatización." },
+  { Icon: Shield, title: "C2 Telegram", description: "Comando y control vía bot de Telegram con callbacks seguros y autenticación." },
+  { Icon: Network, title: "API Gateway", description: "Interfaz programática para integración con sistemas externos y automatización." },
 ];
 
 const caps_en = [
@@ -19,8 +19,8 @@ const caps_en = [
   { Icon: BarChart3, title: "Operational dashboard", description: "Unified view of telemetry, alerts and agent status in real time." },
   { Icon: GitBranch, title: "Event correlation", description: "Correlation engine connecting cross-agent signals to reveal attack chains." },
   { Icon: Zap, title: "Auto-remediation", description: "Evidence-based automated response. Every action includes justification and traceability." },
-  { Icon: Shield, title: "Unified control", description: "Centralized command and control with secure communication and authentication." },
-  { Icon: Network, title: "Integration API", description: "Programmatic interface for integration with external systems and automation." },
+  { Icon: Shield, title: "C2 Telegram", description: "Command and control via Telegram bot with secure callbacks and authentication." },
+  { Icon: Network, title: "API Gateway", description: "Programmatic interface for integration with external systems and automation." },
 ];
 
 interface Props { params: Promise<{ lang: string }> }

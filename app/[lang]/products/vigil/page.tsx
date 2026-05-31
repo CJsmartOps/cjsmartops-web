@@ -6,7 +6,7 @@ import { ProductCapability } from "@/components/products/product-capability";
 import { GradientCard } from "@/components/ui/gradient-card";
 
 const caps_es = [
-  { Icon: Activity, title: "Telemetría a nivel proceso", description: "Señales no bloqueantes con huella ultraligera. Recolección con límite de frecuencia." },
+  { Icon: Activity, title: "Telemetría a nivel proceso", description: "Señales no bloqueantes con huella mínima (< 40MB RAM). Recolección con límite de frecuencia." },
   { Icon: BarChart3, title: "Líneas base de comportamiento", description: "Modelado estadístico sobre semanas de datos. Detección de desviaciones tempranas." },
   { Icon: Clock, title: "Detección de drift", description: "Identificación de cambios graduales en el comportamiento que las reglas estáticas no capturarían." },
   { Icon: Database, title: "Datos longitudinales", description: "Conservación de datos durante semanas para establecer patrones y detectar anomalías sutiles." },
@@ -15,7 +15,7 @@ const caps_es = [
 ];
 
 const caps_en = [
-  { Icon: Activity, title: "Process-level telemetry", description: "Non-blocking signals with ultra-light footprint. Rate-limited collection." },
+  { Icon: Activity, title: "Process-level telemetry", description: "Non-blocking signals with minimal footprint (< 40MB RAM). Rate-limited collection." },
   { Icon: BarChart3, title: "Behavioral baselines", description: "Statistical modeling over weeks of data. Early deviation detection." },
   { Icon: Clock, title: "Drift detection", description: "Identification of gradual behavioral changes that static rules would miss." },
   { Icon: Database, title: "Longitudinal data", description: "Data retention for weeks to establish patterns and detect subtle anomalies." },

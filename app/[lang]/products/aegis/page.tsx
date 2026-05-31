@@ -7,21 +7,19 @@ import { GradientCard } from "@/components/ui/gradient-card";
 
 const caps_es = [
   { Icon: Shield, title: "Contención a nivel proceso", description: "Aislamiento de procesos sospechosos con políticas reversibles y registro de auditoría completo." },
-  { Icon: Zap, title: "Detección de amenazas fileless", description: "Identificación de ataques en memoria sin dependencia de firmas de archivos. Análisis de patrones anómalos en tiempo real." },
-  { Icon: Shield, title: "Perímetros de contención", description: "Aislamiento de procesos sospechosos con políticas reversibles y registro de auditoría completo." },
-  { Icon: Globe, title: "Monitoreo de memoria", description: "Observación continua de la actividad en memoria para detectar manipulaciones no autorizadas." },
-  { Icon: Bug, title: "Clasificación inteligente", description: "Gestión automática de cuarentena con reducción de falsos positivos y aprendizaje continuo." },
-  { Icon: FileText, title: "Registro de auditoría inmutable", description: "Cadenas de eventos con firma criptográfica. Total trazabilidad de cada acción." },
+  { Icon: Zap, title: "Detección de amenazas fileless", description: "Análisis de memfd, LD_PRELOAD y binarios eliminados cada 60 segundos." },
+  { Icon: Globe, title: "RAM Guard", description: "Monitoreo continuo de memoria para detectar inyecciones y manipulaciones no autorizadas." },
+  { Icon: Bug, title: "Whiteliast dinámica", description: "Gestión automática de cuarentena con falsos positivos conocidos y aprendizaje continuo." },
+  { Icon: FileText, title: "Registro de auditoría inmutable", description: "Cadenas de eventos firmadas con HMAC-SHA256. Total trazabilidad de cada acción." },
   { Icon: PackageOpen, title: "Gobernanza de confianza adaptativa", description: "Scores que evolucionan con el comportamiento. Sin confianza binaria ni permanente." },
 ];
 
 const caps_en = [
   { Icon: Shield, title: "Process-level containment", description: "Suspicious process isolation with reversible policies and complete audit logging." },
-  { Icon: Zap, title: "Fileless threat detection", description: "In-memory attack identification without file signature dependency. Real-time anomalous pattern analysis." },
-  { Icon: Shield, title: "Containment perimeters", description: "Suspicious process isolation with reversible policies and complete audit logging." },
-  { Icon: Globe, title: "Memory monitoring", description: "Continuous memory activity observation to detect unauthorized manipulations." },
-  { Icon: Bug, title: "Intelligent classification", description: "Automatic quarantine management with false positive reduction and continuous learning." },
-  { Icon: FileText, title: "Immutable audit logging", description: "Cryptographically signed event chains. Full traceability for every action." },
+  { Icon: Zap, title: "Fileless threat detection", description: "Memfd, LD_PRELOAD and deleted binary analysis every 60 seconds." },
+  { Icon: Globe, title: "RAM Guard", description: "Continuous memory monitoring to detect unauthorized injections and manipulations." },
+  { Icon: Bug, title: "Dynamic whitelisting", description: "Automatic quarantine management with known false positives and continuous learning." },
+  { Icon: FileText, title: "Immutable audit logging", description: "HMAC-SHA256 signed event chains. Full traceability for every action." },
   { Icon: PackageOpen, title: "Adaptive trust governance", description: "Scores that evolve with behavior. No binary or permanent trust." },
 ];
 
