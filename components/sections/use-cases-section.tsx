@@ -15,8 +15,8 @@ const cases = [
     icon: Bug,
     es: "Detección de Amenazas Fileless",
     en: "Fileless Threat Detection",
-    desc_es: "Identificación de ataques en memoria sin dependencia de firmas de archivos. Análisis de memfd, LD_PRELOAD y binarios eliminados.",
-    desc_en: "In-memory attack identification without file signature dependency. Analysis of memfd, LD_PRELOAD and deleted binaries."
+    desc_es: "Identificación de ataques en memoria sin dependencia de firmas de archivos. Detección de patrones anómalos en tiempo de ejecución.",
+    desc_en: "In-memory attack identification without file signature dependency. Runtime anomalous pattern detection."
   },
   {
     icon: Network,
@@ -29,15 +29,15 @@ const cases = [
     icon: FileSearch,
     es: "Forensia Post-Incidente",
     en: "Post-Incident Forensics",
-    desc_es: "Registros inmutables con HMAC-SHA256. Cadenas de eventos trazables para auditoría y cumplimiento.",
-    desc_en: "Immutable logs with HMAC-SHA256. Traceable event chains for audit and compliance."
+    desc_es: "Registros inmutables con firma criptográfica. Cadenas de eventos trazables para auditoría y cumplimiento.",
+    desc_en: "Immutable logs with cryptographic signatures. Traceable event chains for audit and compliance."
   },
   {
     icon: PackageOpen,
     es: "Monitoreo de Supply Chain",
     en: "Supply Chain Monitoring",
-    desc_es: "Validación de integridad de dependencias con whitelist y verificación SHA256. Rollback automático ante anomalías.",
-    desc_en: "Dependency integrity validation with whitelist and SHA256 verification. Automatic rollback on anomalies."
+    desc_es: "Validación de integridad de dependencias con verificación criptográfica. Rollback automático ante anomalías.",
+    desc_en: "Dependency integrity validation with cryptographic verification. Automatic rollback on anomalies."
   }
 ];
 

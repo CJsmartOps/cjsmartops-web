@@ -71,7 +71,7 @@
         { "label": "Approach", "traditional": "Static signatures", "cjsmartops": "Runtime behavior" },
         { "label": "Visibility", "traditional": "Fragmented logs", "cjsmartops": "Unified telemetry" },
         { "label": "Automation", "traditional": "Black box", "cjsmartops": "Explainable & reversible" },
-        { "label": "Footprint", "traditional": "High (heavy agents)", "cjsmartops": "< 40MB RAM per agent" },
+        { "label": "Footprint", "traditional": "High (heavy agents)", "cjsmartops": "Minimal memory footprint" },
         { "label": "Scale", "traditional": "Datacenter", "cjsmartops": "Cloud-native" }
       ]
     }
@@ -114,7 +114,7 @@
     "citadel": {
       "name": "Citadel",
       "tagline": "Cryptographic Custody",
-      "purpose": "Citadel provides secret management, at-rest encryption (Fernet AES) and key rotation for all platform components.",
+      "purpose": "Citadel provides secret management, at-rest encryption with robust cryptographic standards and key rotation for all platform components.",
       "problem": "Secrets scattered across config files and environment variables represent a critical risk. Centralized custody with verifiable encryption is needed.",
       "status": "alpha",
       "status_label": "Alpha"
@@ -149,7 +149,7 @@
       },
       "telemetry": {
         "title": "Semantic Telemetry",
-        "body": "CIPHER transforms raw logs into actionable intelligence. It classifies TCP flows with anomaly detectors, maps relationships between processes and endpoints, and assigns contextual reputation scores to each connection."
+        "body": "CIPHER transforms raw logs into actionable intelligence. It classifies network flows with anomaly detectors, maps relationships between processes and endpoints, and assigns contextual reputation scores to each connection."
       },
       "intelligence": {
         "title": "Contextual Intelligence",
@@ -157,11 +157,11 @@
       },
       "custody": {
         "title": "Cryptographic Custody",
-        "body": "All secrets, tokens and sensitive data are encrypted with Fernet AES. Keys rotate periodically. No secrets are stored in plaintext or transmitted without encryption."
+        "body": "All secrets, tokens and sensitive data are encrypted with robust cryptographic standards. Keys rotate periodically. No secrets are stored in plaintext or transmitted without encryption."
       },
       "impact": {
         "title": "Low Operational Impact",
-        "body": "Agents with less than 40MB memory footprint. Non-blocking, rate-limited telemetry collection. Designed to run alongside production workloads without interference."
+        "body": "Agents with an ultra-light memory footprint. Non-blocking, rate-limited telemetry collection. Designed to run alongside production workloads without interference."
       }
     }
   },
@@ -214,11 +214,11 @@
     },
     "innovation": {
       "title": "Innovation",
-      "body": "Adaptive trust scoring, reversible containment with audit logging, 8-layer supply chain validation, and minimal-footprint agents designed for cloud-native environments."
+      "body": "Adaptive trust scoring, reversible containment with audit logging, multi-stage source integrity validation, and minimal-footprint agents designed for cloud-native environments."
     },
     "security": {
       "title": "Security",
-      "body": "Strict secret management policies. At-rest encryption with Fernet AES. No secrets in source code. Firewall-protected infrastructure with continuous monitoring."
+      "body": "Security is built into the platform architecture from the start. CJsmartOps follows secure development practices, controlled access models, auditability principles, and protection mechanisms designed to safeguard operational integrity and data protection."
     },
     "origin": {
       "title": "Origin",

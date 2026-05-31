@@ -18,15 +18,11 @@ interface Metric {
 
 const metrics_es: Metric[] = [
   { icon: Activity, value: "6", label: "Módulos de plataforma", detail: "AEGIS, Vigil, Genesis, CIPHER, Citadel y Sentinel en desarrollo continuo" },
-  { icon: ShieldCheck, value: "500+", label: "Reglas YARA en pipeline", detail: "Reglas externas con validación de integridad + reglas propias compiladas" },
-  { icon: BarChart3, value: "10K+", label: "Eventos de telemetría", detail: "Señales de múltiples agentes correlacionadas en tiempo real" },
-  { icon: Clock, value: "90+", label: "Días de estabilidad operativa", detail: "Servicios core operando sin interrupciones en entorno de producción" },
-  { icon: Users, value: "< 10", label: "Endpoints bajo observación", detail: "Clientes productivos y endpoints de evaluación internos" },
+  { icon: ShieldCheck, value: "500+", label: "Reglas de detección activas", detail: "Reglas con validación de integridad + reglas propias compiladas" },
 ];
-
 const metrics_en: Metric[] = [
   { icon: Activity, value: "6", label: "Platform modules", detail: "AEGIS, Vigil, Genesis, CIPHER, Citadel and Sentinel in continuous development" },
-  { icon: ShieldCheck, value: "500+", label: "YARA rules in pipeline", detail: "External rules with integrity validation + compiled proprietary rules" },
+  { icon: ShieldCheck, value: "500+", label: "Active detection rules", detail: "Integrity-validated rules + compiled proprietary detection logic" },
   { icon: BarChart3, value: "10K+", label: "Telemetry events", detail: "Multi-agent signals correlated in real time" },
   { icon: Clock, value: "90+", label: "Days of operational stability", detail: "Core services operating without interruptions in production environment" },
   { icon: Users, value: "< 10", label: "Endpoints under observation", detail: "Production clients and internal evaluation endpoints" },
