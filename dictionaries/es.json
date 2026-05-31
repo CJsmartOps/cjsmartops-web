@@ -68,11 +68,31 @@
       "traditional": "Seguridad Tradicional",
       "cjsmartops": "CJsmartOps",
       "rows": [
-        { "label": "Enfoque", "traditional": "Firmas estáticas", "cjsmartops": "Comportamiento en runtime" },
-        { "label": "Visibilidad", "traditional": "Logs fragmentados", "cjsmartops": "Telemetría unificada" },
-        { "label": "Automatización", "traditional": "Caja negra", "cjsmartops": "Explicable y reversible" },
-        { "label": "Impacto", "traditional": "Alto (agentes pesados)", "cjsmartops": "Huella mínima en memoria" },
-        { "label": "Escala", "traditional": "Datacenter", "cjsmartops": "Cloud-native" }
+        {
+          "label": "Enfoque",
+          "traditional": "Firmas estáticas",
+          "cjsmartops": "Comportamiento en runtime"
+        },
+        {
+          "label": "Visibilidad",
+          "traditional": "Logs fragmentados",
+          "cjsmartops": "Telemetría unificada"
+        },
+        {
+          "label": "Automatización",
+          "traditional": "Caja negra",
+          "cjsmartops": "Explicable y reversible"
+        },
+        {
+          "label": "Impacto",
+          "traditional": "Alto (agentes pesados)",
+          "cjsmartops": "Huella mínima en memoria"
+        },
+        {
+          "label": "Escala",
+          "traditional": "Datacenter",
+          "cjsmartops": "Cloud-native"
+        }
       ]
     }
   },
@@ -172,27 +192,47 @@
       {
         "period": "Q2–Q3 2026",
         "title": "Consolidación Arquitectónica",
-        "items": ["Multi-tenancy", "API Gateway unificado", "Autenticación centralizada"]
+        "items": [
+          "Multi-tenancy",
+          "API Gateway unificado",
+          "Autenticación centralizada"
+        ]
       },
       {
         "period": "Q4 2026",
         "title": "Gobernanza Criptográfica",
-        "items": ["Citadel v1", "Gestor de secretos", "Rotación automática de claves"]
+        "items": [
+          "Citadel v1",
+          "Gestor de secretos",
+          "Rotación automática de claves"
+        ]
       },
       {
         "period": "Q1 2027",
         "title": "Observabilidad Avanzada",
-        "items": ["Pipelines de ML", "Detección de anomalías predictivas", "Perfiles de comportamiento"]
+        "items": [
+          "Pipelines de ML",
+          "Detección de anomalías predictivas",
+          "Perfiles de comportamiento"
+        ]
       },
       {
         "period": "Q2–Q3 2027",
         "title": "Endpoint Ecosystem",
-        "items": ["Auto-deploy de agentes", "Agent Marketplace", "Integraciones cloud nativas"]
+        "items": [
+          "Auto-deploy de agentes",
+          "Agent Marketplace",
+          "Integraciones cloud nativas"
+        ]
       },
       {
         "period": "Q4 2027+",
         "title": "Servicios Gestionados",
-        "items": ["SOC as a Service", "Automatización de cumplimiento", "Tier Enterprise"]
+        "items": [
+          "SOC as a Service",
+          "Automatización de cumplimiento",
+          "Tier Enterprise"
+        ]
       }
     ],
     "disclaimer": "Este roadmap refleja nuestra visión y está sujeto a cambios según validación de mercado y avances de investigación."
@@ -222,7 +262,13 @@
     },
     "origin": {
       "title": "Origen",
-      "body": "CJsmartOps fue fundada por Carlos Suárez en Laboulaye, Córdoba, Argentina. La empresa opera con infraestructura cloud y un equipo enfocado en investigación y desarrollo de plataforma."
+      "body": "Fundada por Carlos Suárez en Argentina. CJsmartOps opera con infraestructura cloud y un equipo enfocado en investigación y desarrollo de plataforma."
+    },
+    "leadership": {
+      "title": "Liderazgo",
+      "name": "Carlos Javier Suárez",
+      "role": "Founder & CEO",
+      "bio": "Técnico en Computación con formación en Análisis de Sistemas y Programación. Orientado a la observabilidad, la seguridad operacional, la automatización y el desarrollo de plataformas tecnológicas inteligentes. Actualmente lidera la evolución de CJsmartOps, una plataforma de observabilidad y gobernanza de confianza impulsada por IA."
     }
   },
   "contact": {
@@ -236,7 +282,7 @@
     "location": {
       "title": "Ubicación",
       "body": "Operamos desde Argentina con infraestructura cloud distribuida.",
-      "address": "Laboulaye, Córdoba — Argentina"
+      "address": "Argentina"
     },
     "github": {
       "title": "GitHub",
@@ -269,7 +315,12 @@
       "role": "Cargo",
       "role_placeholder": "Tu cargo",
       "interest": "Interés (seleccioná todos los que correspondan)",
-      "interest_options": ["AEGIS — Contención", "Vigil — Telemetría", "Genesis — Orquestación", "CIPHER — Inteligencia"],
+      "interest_options": [
+        "AEGIS — Contención",
+        "Vigil — Telemetría",
+        "Genesis — Orquestación",
+        "CIPHER — Inteligencia"
+      ],
       "message": "Mensaje adicional",
       "message_placeholder": "Contanos sobre tu infraestructura y necesidades",
       "submit": "Solicitar Demo",
