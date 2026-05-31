@@ -1,8 +1,14 @@
 import { getDictionary, type Lang } from "@/lib/i18n";
+import { generatePageMetadata } from "@/lib/metadata";
 import Link from "next/link";
 import { Shield, Activity, Cpu, Brain, Lock, FileSearch } from "lucide-react";
 
 interface Props { params: Promise<{ lang: string }> }
+
+export async function generateMetadata({ params }: Props) {
+  const { lang } = await params;
+  return generatePageMetadata({ lang: lang as Lang, slug: "products", metaKey: "products" });
+}
 
 export default async function ProductsPage({ params }: Props) {
   const { lang } = await params;
