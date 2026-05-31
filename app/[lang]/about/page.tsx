@@ -2,7 +2,6 @@ import { getDictionary, type Lang } from "@/lib/i18n";
 import { generatePageMetadata } from "@/lib/metadata";
 import { PageHeader } from "@/components/ui/page-header";
 import { GradientCard } from "@/components/ui/gradient-card";
-import { Github } from "lucide-react";
 
 interface Props { params: Promise<{ lang: string }> }
 
