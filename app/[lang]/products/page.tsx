@@ -1,3 +1,4 @@
+import { getDictionary, type Lang } from "@/lib/i18n";
 import Link from "next/link";
 import { Shield, Activity, Cpu, Brain, Lock, FileSearch } from "lucide-react";
 
@@ -5,10 +6,13 @@ interface Props { params: Promise<{ lang: string }> }
 
 export default async function ProductsPage({ params }: Props) {
   const { lang } = await params;
+  const dict = await getDictionary(lang as Lang);
+  const p = dict.products;
 
   return (
     <div className="flex flex-col pt-32 pb-16 px-6 text-center">
-      <h1 className="text-4xl font-bold">Productos</h1>
+      <h1 className="text-4xl font-bold">{p.overview_title}</h1>
+      <p className="mt-4 text-secondary max-w-2xl mx-auto">{p.overview_subtitle}</p>
       <div className="mt-8 grid gap-4 max-w-4xl mx-auto sm:grid-cols-2 lg:grid-cols-3">
         {[
           { key: "aegis", name: "AEGIS", icon: Shield, desc: "Contención en Runtime" },
