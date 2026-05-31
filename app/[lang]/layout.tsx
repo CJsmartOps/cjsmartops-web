@@ -1,4 +1,5 @@
 import { getDictionary, type Lang } from "@/lib/i18n";
+import { Navbar } from "@/components/layout/navbar";
 
 export default async function LangLayout({
   children,
@@ -8,6 +9,6 @@ export default async function LangLayout({
   params: Promise<{ lang: string }>;
 }) {
   const { lang } = await params;
-  const dict = await getDictionary(lang as Lang);
-  return <>{children}</>;
+  await getDictionary(lang as Lang);
+  return <><Navbar lang={lang as Lang} /><main className="flex-1">{children}</main></>;
 }
