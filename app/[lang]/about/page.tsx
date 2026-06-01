@@ -2,6 +2,7 @@ import { getDictionary, type Lang } from "@/lib/i18n";
 import { generatePageMetadata } from "@/lib/metadata";
 import { PageHeader } from "@/components/ui/page-header";
 import { GradientCard } from "@/components/ui/gradient-card";
+import Image from "next/image";
 
 interface Props { params: Promise<{ lang: string }> }
 
@@ -34,9 +35,13 @@ export default async function AboutPage({ params }: Props) {
           <div className="rounded-2xl border border-border-glow bg-surface/30 p-8 backdrop-blur-sm">
             <h2 className="mb-6 text-lg font-semibold text-foreground">{a.leadership.title}</h2>
             <div className="flex flex-col sm:flex-row gap-6 items-start">
-              <div className="shrink-0 flex h-20 w-20 items-center justify-center rounded-full bg-accent/15 text-2xl font-bold text-accent notranslate" translate="no">
-                CS
-              </div>
+              <Image
+                src="/founder-ceo.jpg"
+                alt={a.leadership.name}
+                width={100}
+                height={133}
+                className="shrink-0 h-24 w-24 rounded-full object-cover ring-2 ring-border-glow"
+              />
               <div>
                 <h3 className="text-xl font-bold text-foreground notranslate" translate="no">
                   {a.leadership.name}
