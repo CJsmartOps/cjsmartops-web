@@ -54,9 +54,9 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html lang="es" translate="no" className={`${geistSans.variable} ${geistMono.variable} h-full antialiased notranslate`}>
       <head>
-        <link rel="alternate" hreflang="es" href="https://cjsmartops.com.ar/es" />
-        <link rel="alternate" hreflang="en" href="https://cjsmartops.com.ar/en" />
-        <link rel="alternate" hreflang="x-default" href="https://cjsmartops.com.ar/es" />
+        <link rel="alternate" hrefLang="es" href="https://cjsmartops.com.ar/es" />
+        <link rel="alternate" hrefLang="en" href="https://cjsmartops.com.ar/en" />
+        <link rel="alternate" hrefLang="x-default" href="https://cjsmartops.com.ar/es" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
