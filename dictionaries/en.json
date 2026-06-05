@@ -54,7 +54,7 @@
   },
   "platform": {
     "title": "Platform",
-    "subtitle": "An integrated ecosystem of agents, correlation engines and dashboards designed for contextual runtime defense.",
+    "subtitle": "An integrated ecosystem of agents, correlation engines and dashboards designed for contextual runtime observability.",
     "what": {
       "title": "What is CJsmartOps",
       "body": "A modular platform that combines telemetry agents, containment engines and semantic analysis to provide unprecedented operational visibility. It is not a traditional SIEM nor a conventional EDR — it is a contextual observability layer."
@@ -98,7 +98,7 @@
   },
   "products": {
     "title": "Products",
-    "subtitle": "Independent modules that make up the CJsmartOps platform. Each solves a specific runtime defense problem.",
+    "subtitle": "Independent modules that make up the CJsmartOps platform. Each solves a specific runtime observability problem.",
     "genesis": {
       "name": "Genesis",
       "tagline": "Orchestration & Central Command",
@@ -157,7 +157,7 @@
   },
   "technology": {
     "title": "Technology",
-    "subtitle": "The technical foundations that enable contextual observability, trust governance and runtime defense.",
+    "subtitle": "The technical foundations that enable contextual observability, trust governance and operational intelligence.",
     "sections": {
       "observability": {
         "title": "Contextual Observability",
@@ -239,14 +239,14 @@
   },
   "about": {
     "title": "About",
-    "subtitle": "CJsmartOps is a technology startup developing its own observability, trust governance and contextual defense platform.",
+    "subtitle": "CJsmartOps is a technology startup developing its own observability, trust governance and operational intelligence platform.",
     "mission": {
       "title": "Mission",
-      "body": "Make contextual observability accessible for modern infrastructure, reducing operational noise and improving defensive explainability."
+      "body": "Make contextual observability accessible for modern infrastructure, reducing operational noise and improving operational transparency."
     },
     "vision": {
       "title": "Vision",
-      "body": "Become the reference platform for telemetry-based cloud-native defense, with global recognition for its scientific approach and operational transparency."
+      "body": "Become the reference platform for telemetry-based cloud-native observability, with global recognition for its scientific approach and operational transparency."
     },
     "approach": {
       "title": "Approach",
@@ -273,7 +273,7 @@
   },
   "contact": {
     "title": "Contact",
-    "subtitle": "Whether you're evaluating observability platforms, looking to integrate contextual defense, or exploring collaborations — we want to hear from you.",
+    "subtitle": "Whether you're evaluating observability platforms, looking to integrate operational intelligence, or exploring collaborations — we want to hear from you.",
     "email": {
       "title": "Email",
       "body": "For platform inquiries, demos or collaborations:",
@@ -361,7 +361,7 @@
     },
     "platform": {
       "title": "Platform — CJsmartOps",
-      "description": "Integrated ecosystem of agents, correlation engines and dashboards for contextual runtime defense."
+      "description": "Integrated ecosystem of agents, correlation engines and dashboards for contextual runtime observability."
     },
     "products": {
       "title": "Products — CJsmartOps",
