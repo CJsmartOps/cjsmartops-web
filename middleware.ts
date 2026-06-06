@@ -26,12 +26,21 @@ export function middleware(request: NextRequest) {
     (locale) => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`
   );
 
-  if (pathnameHasLocale) return NextResponse.next();
+  if (pathnameHasLocale) {
+    const locale = pathname.split("/")[1];
+    const response = NextResponse.next();
+    response.headers.set("x-lang", locale);
+    response.headers.set("Content-Language", locale);
+    return response;
+  }
 
   const locale = getLocale(request);
   const newUrl = new URL(`/${locale}${pathname}`, request.url);
   newUrl.search = request.nextUrl.search;
-  return NextResponse.redirect(newUrl);
+  const response = NextResponse.redirect(newUrl);
+  response.headers.set("x-lang", locale);
+  response.headers.set("Content-Language", locale);
+  return response;
 }
 
 export const config = {

@@ -28,6 +28,8 @@ export async function generatePageMetadata({
     alternates["x-default"] = `${baseUrl}/es/${slug}`;
   }
 
+  const ogLocale = lang === "es" ? "es_AR" : "en_US";
+
   return {
     title: t?.title ?? "CJsmartOps",
     description: t?.description ?? "",
@@ -40,8 +42,10 @@ export async function generatePageMetadata({
       siteName: "CJsmartOps",
       title: t?.title ?? "CJsmartOps",
       description: t?.description ?? "",
+      url: `${baseUrl}${path}`,
       type: "website",
-      images: [{ url: ogImage }],
+      locale: ogLocale,
+      images: [{ url: ogImage, width: 1200, height: 630 }],
     },
     twitter: {
       card: "summary_large_image",

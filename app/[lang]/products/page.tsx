@@ -21,12 +21,12 @@ export default async function ProductsPage({ params }: Props) {
       <p className="mt-4 text-secondary max-w-2xl mx-auto">{p.overview_subtitle}</p>
       <div className="mt-8 grid gap-4 max-w-4xl mx-auto sm:grid-cols-2 lg:grid-cols-3">
         {[
-          { key: "aegis", name: "AEGIS", icon: Shield, desc: "Contención en Runtime" },
-          { key: "vigil", name: "Vigil", icon: Activity, desc: "Telemetría y Drift" },
-          { key: "genesis", name: "Genesis", icon: Cpu, desc: "Orquestación" },
-          { key: "cipher", name: "CIPHER", icon: Brain, desc: "Inteligencia Semántica" },
-          { key: "citadel", name: "Citadel", icon: Lock, desc: "Custodia Criptográfica" },
-          { key: "sentinel", name: "Sentinel", icon: FileSearch, desc: "Auditoría Forense" },
+          { key: "aegis", name: p.aegis.name, icon: Shield, desc: p.aegis.tagline },
+          { key: "vigil", name: p.vigil.name, icon: Activity, desc: p.vigil.tagline },
+          { key: "genesis", name: p.genesis.name, icon: Cpu, desc: p.genesis.tagline },
+          { key: "cipher", name: p.cipher.name, icon: Brain, desc: p.cipher.tagline },
+          { key: "citadel", name: p.citadel.name, icon: Lock, desc: p.citadel.tagline },
+          { key: "sentinel", name: p.sentinel.name, icon: FileSearch, desc: p.sentinel.tagline },
         ].map(({ key: k, name, icon: Icon, desc }) => (
           <Link key={k} href={`/${lang}/products/${k}`} className="rounded-2xl border border-border bg-surface/40 p-6 backdrop-blur-sm hover:border-border-glow hover:bg-surface/60 transition-all">
             <Icon className="h-8 w-8 text-accent mx-auto mb-3" />

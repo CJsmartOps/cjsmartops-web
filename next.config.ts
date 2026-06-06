@@ -30,6 +30,27 @@ const nextConfig: NextConfig = {
           { key: "Cross-Origin-Resource-Policy", value: "same-origin" },
         ],
       },
+      {
+        source: "/en/(.*)",
+        headers: [
+          { key: "Content-Language", value: "en" },
+        ],
+      },
+      {
+        source: "/es/(.*)",
+        headers: [
+          { key: "Content-Language", value: "es" },
+        ],
+      },
+    ];
+  },
+  async redirects() {
+    return [
+      {
+        source: "/",
+        destination: "/es",
+        permanent: true,
+      },
     ];
   },
 };

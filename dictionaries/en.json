@@ -44,7 +44,7 @@
     "trust": {
       "eyebrow": "Metrics",
       "title": "Verified Telemetry",
-      "subtitle": "Representative figures from the CJsmartOps ecosystem. Demonstrative data."
+      "subtitle": "Representative figures from the CJsmartOps ecosystem."
     },
     "cta": {
       "title": "Ready for Contextual Observability?",
