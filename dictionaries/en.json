@@ -233,6 +233,54 @@
       "body": "CJsmartOps operates as a founder-led startup. Development is accelerated through AI tools, always under human direction, validation and quality control. Platform architecture and technical decisions are the direct responsibility of the founder."
     }
   },
+  "common": {
+    "back_home": "Back to Home",
+    "read_more": "Read More",
+    "learn_more": "Learn More",
+    "get_started": "Get Started"
+  },
+  "startup": {
+    "title": "CJsmartOps for Startups",
+    "subtitle": "Information for evaluators from Google for Startups, AWS Activate, Microsoft for Startups and investment funds.",
+    "oneliner": {
+      "title": "In One Sentence",
+      "body": "CJsmartOps is a B2B SaaS platform that detects runtime threats, reduces false positives and automates security response for cloud-native infrastructure."
+    },
+    "problem_solution": {
+      "title": "Problem & Solution",
+      "problem": "Security and DevOps teams receive thousands of alerts per day. 95% are false positives. Real threats hide in the noise. Traditional tools (SIEM, EDR) generate more alerts than any team can process.",
+      "solution": "CJsmartOps unifies runtime telemetry, process-level containment and adaptive scoring in a single platform. Every alert includes full traceability. Every containment action is reversible. No black boxes."
+    },
+    "product": {
+      "title": "Product",
+      "body": "A platform with six integrated capabilities: fileless threat detection (AEGIS), process telemetry (Vigil), multi-agent orchestration (Genesis), semantic intelligence (CIPHER), cryptographic custody (Citadel) and forensic auditing (Sentinel). Four capabilities in production. Two in active development (Beta/Alpha)."
+    },
+    "traction": {
+      "title": "Traction & Status",
+      "body": "Operational platform with 500+ active detection rules. Continuous development with daily commits. Production infrastructure running 24/7 monitoring real endpoints."
+    },
+    "team": {
+      "title": "Team & Structure",
+      "body": "Founder-led startup by Carlos Javier Suárez (Founder & CEO). Computer Systems Technician with academic foundations in Systems Analysis and Programming. AI-accelerated development under the Vibe Coding paradigm, with human direction, validation and quality control. Based in Argentina."
+    },
+    "business": {
+      "title": "Business Model",
+      "body": "B2B SaaS. Per-endpoint licensing. Progressive capability-based implementation. Enterprise plans available. Demo upon request."
+    },
+    "cloud": {
+      "title": "Cloud Infrastructure",
+      "body": "Cloud-native architecture with services on Linux VPS and automated CI/CD deployments. Evaluating migration to Google Cloud Platform to scale agent and receiver infrastructure."
+    },
+    "vision": {
+      "title": "Vision & Roadmap",
+      "body": "Public roadmap with quarterly phases through Q4 2027+. Upcoming milestones: multi-tenancy (Q2-Q3 2026), Citadel v1 (Q4 2026), ML pipelines for predictive detection (Q1 2027)."
+    },
+    "cta": {
+      "title": "Evaluating CJsmartOps for your program?",
+      "body": "Contact the founder directly for a personalized demo or to address any questions about the platform.",
+      "email": "info@cjsmartops.com.ar"
+    }
+  },
   "contact": {
     "title": "Contact",
     "subtitle": "Whether you're evaluating observability platforms, looking to integrate operational intelligence, or exploring collaborations — we want to hear from you.",
@@ -344,6 +392,10 @@
     "contact": {
       "title": "Contact — CJsmartOps",
       "description": "Contact the CJsmartOps team for platform inquiries, demos and collaborations."
+    },
+    "startup": {
+      "title": "Startup — CJsmartOps",
+      "description": "CJsmartOps: B2B SaaS platform for runtime security and intelligent observability. Founded in Argentina by Carlos Suárez. Cloud-native, six integrated capabilities."
     }
   }
 }

@@ -316,6 +316,48 @@
     "learn_more": "Más Información",
     "get_started": "Comenzar"
   },
+  "startup": {
+    "title": "CJsmartOps para Startups",
+    "subtitle": "Información para evaluadores de Google for Startups, AWS Activate, Microsoft for Startups y fondos de inversión.",
+    "oneliner": {
+      "title": "En una frase",
+      "body": "CJsmartOps es una plataforma SaaS B2B que detecta amenazas en runtime, reduce falsos positivos y automatiza la respuesta de seguridad para infraestructura cloud-native."
+    },
+    "problem_solution": {
+      "title": "Problema y Solución",
+      "problem": "Los equipos de seguridad y DevOps reciben miles de alertas por día. El 95% son falsos positivos. Las amenazas reales se ocultan en el ruido. Las herramientas tradicionales (SIEM, EDR) generan más alertas de las que un equipo puede procesar.",
+      "solution": "CJsmartOps unifica telemetría de runtime, contención a nivel proceso y scoring adaptativo en una única plataforma. Cada alerta incluye trazabilidad completa. Cada acción de contención es reversible. Sin cajas negras."
+    },
+    "product": {
+      "title": "Producto",
+      "body": "Una plataforma con seis capacidades integradas: detección de amenazas fileless (AEGIS), telemetría de procesos (Vigil), orquestación multi-agente (Genesis), inteligencia semántica (CIPHER), custodia criptográfica (Citadel) y auditoría forense (Sentinel). Cuatro capacidades en producción. Dos en desarrollo activo (Beta/Alpha)."
+    },
+    "traction": {
+      "title": "Tracción y Estado",
+      "body": "Plataforma operativa con más de 500 reglas de detección activas. Desarrollo continuo con commits diarios. Infraestructura corriendo en producción 24/7 monitoreando endpoints reales."
+    },
+    "team": {
+      "title": "Equipo y Estructura",
+      "body": "Startup liderada por su fundador, Carlos Javier Suárez (Founder & CEO). Técnico en Computación con formación en Análisis de Sistemas y Programación. Desarrollo acelerado por IA bajo el paradigma de Vibe Coding, con dirección, validación y control de calidad humano. Basada en Argentina."
+    },
+    "business": {
+      "title": "Modelo de Negocio",
+      "body": "SaaS B2B. Licenciamiento por endpoint monitoreado. Implementación progresiva por capacidades. Planes enterprise disponibles. Demo bajo solicitud."
+    },
+    "cloud": {
+      "title": "Infraestructura Cloud",
+      "body": "Arquitectura cloud-native con servicios en VPS Linux y deployments automatizados vía CI/CD. Evaluando migración a Google Cloud Platform para escalar la infraestructura de agentes y receivers."
+    },
+    "vision": {
+      "title": "Visión y Roadmap",
+      "body": "Roadmap público con fases trimestrales hasta Q4 2027+. Próximos hitos: multi-tenancy (Q2-Q3 2026), Citadel v1 (Q4 2026), pipelines de ML para detección predictiva (Q1 2027)."
+    },
+    "cta": {
+      "title": "¿Evaluando CJsmartOps para tu programa?",
+      "body": "Contactá al founder directamente para una demostración personalizada o para resolver cualquier duda sobre la plataforma.",
+      "email": "info@cjsmartops.com.ar"
+    }
+  },
   "meta": {
     "home": {
       "title": "CJsmartOps — Observabilidad Inteligente y Seguridad en Runtime",

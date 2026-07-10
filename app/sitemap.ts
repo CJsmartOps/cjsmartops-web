@@ -16,6 +16,7 @@ const slugs = [
   "roadmap",
   "about",
   "contact",
+  "startup",
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
