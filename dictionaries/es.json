@@ -386,6 +386,10 @@
     "contact": {
       "title": "Contacto — CJsmartOps",
       "description": "Contactá al equipo de CJsmartOps para consultas sobre la plataforma, demostraciones y colaboraciones."
+    },
+    "startup": {
+      "title": "Startup — CJsmartOps",
+      "description": "CJsmartOps: plataforma SaaS B2B de seguridad en runtime y observabilidad inteligente. Fundada en Argentina por Carlos Suárez. Cloud-native, seis capacidades integradas."
     }
   }
 }
