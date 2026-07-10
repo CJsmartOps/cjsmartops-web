@@ -14,7 +14,7 @@ const navLabels = {
   es: {
     home: "Inicio",
     platform: "Plataforma",
-    products: "Productos",
+    products: "Capacidades",
     technology: "Tecnología",
     roadmap: "Roadmap",
     about: "Nosotros",
@@ -23,7 +23,7 @@ const navLabels = {
   en: {
     home: "Home",
     platform: "Platform",
-    products: "Products",
+    products: "Capabilities",
     technology: "Technology",
     roadmap: "Roadmap",
     about: "About",

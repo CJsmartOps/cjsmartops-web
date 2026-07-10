@@ -32,6 +32,11 @@ export default async function AboutPage({ params }: Props) {
             </GradientCard>
           ))}
 
+          <GradientCard>
+            <h2 className="mb-3 text-lg font-semibold text-foreground">{a.team.title}</h2>
+            <p className="text-sm leading-relaxed text-secondary">{a.team.body}</p>
+          </GradientCard>
+
           <div className="rounded-2xl border border-border-glow bg-surface/30 p-8 backdrop-blur-sm">
             <h2 className="mb-6 text-lg font-semibold text-foreground">{a.leadership.title}</h2>
             <div className="flex flex-col sm:flex-row gap-6 items-start">

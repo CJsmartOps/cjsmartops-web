@@ -2,7 +2,7 @@
   "nav": {
     "home": "Inicio",
     "platform": "Plataforma",
-    "products": "Productos",
+    "products": "Capacidades",
     "technology": "Tecnología",
     "roadmap": "Roadmap",
     "about": "Nosotros",
@@ -15,16 +15,16 @@
   },
   "home": {
     "hero": {
-      "eyebrow": "Plataforma Cloud-Native",
-      "title": "Operaciones, Observabilidad y Gobernanza de Confianza Impulsada por IA",
-      "subtitle": "CJsmartOps es una plataforma tecnológica que integra observabilidad contextual, contención en runtime e inteligencia semántica para infraestructura moderna.",
+      "eyebrow": "Plataforma SaaS Cloud-Native",
+      "title": "Observabilidad Inteligente para Infraestructura Moderna",
+      "subtitle": "Una plataforma unificada que detecta amenazas en tiempo real, reduce falsos positivos y automatiza la respuesta sin comprometer la estabilidad operativa. Diseñada para equipos de seguridad y DevOps que necesitan visibilidad real, no ruido.",
       "cta_primary": "Explorar Plataforma",
       "cta_secondary": "Solicitar Demo"
     },
     "platform_overview": {
-      "eyebrow": "Ecosistema",
-      "title": "Una Plataforma, Seis Pilares",
-      "subtitle": "Cada componente opera de forma independiente y se correlaciona sin fricción. Diseñados para entornos cloud-native."
+      "eyebrow": "Plataforma Unificada",
+      "title": "Una Plataforma, Seis Capacidades Integradas",
+      "subtitle": "Cada capacidad opera de forma autónoma y se correlaciona con las demás dentro de una única plataforma. Diseñadas para entornos cloud-native."
     },
     "benefits": {
       "eyebrow": "Beneficios",
@@ -42,22 +42,28 @@
       "subtitle": "Flujo de datos desde los agentes hasta el dashboard de correlación."
     },
     "trust": {
-      "eyebrow": "Métricas",
-      "title": "Telemetría Verificada",
-      "subtitle": "Cifras representativas del ecosistema CJsmartOps."
+      "eyebrow": "Modelo de Plataforma",
+      "title": "Cómo se Entrega CJsmartOps",
+      "subtitle": "Un producto SaaS B2B con implementación progresiva, licenciamiento empresarial y evolución por capacidades.",
+      "items": [
+        { "title": "Plataforma como Servicio", "body": "Suscripción SaaS con despliegue cloud-native. Sin infraestructura propia requerida para comenzar." },
+        { "title": "Implementación Progresiva", "body": "Activación incremental por capacidades. Cada módulo se incorpora cuando tu operación está lista." },
+        { "title": "Licenciamiento Empresarial", "body": "Modelo flexible por endpoint monitoreado. Escala con tu infraestructura sin costos ocultos." },
+        { "title": "Demo Bajo Solicitud", "body": "Demostración personalizada de la plataforma en funcionamiento. Evaluá las capacidades en contexto real." }
+      ]
     },
     "cta": {
-      "title": "¿Listo para Observabilidad Contextual?",
-      "subtitle": "Descubrí cómo CJsmartOps puede transformar la visibilidad de tu infraestructura.",
+      "title": "¿Listo para Reducir el Ruido Operacional?",
+      "subtitle": "Solicitá una demostración personalizada de la plataforma CJsmartOps en funcionamiento.",
       "button": "Solicitar Demo"
     }
   },
   "platform": {
     "title": "Plataforma",
-    "subtitle": "Un ecosistema integrado de agentes, motores de correlación y dashboards diseñado para la observabilidad contextual en runtime.",
+    "subtitle": "CJsmartOps es una única plataforma SaaS que integra agentes de telemetría, motores de contención y análisis semántico para proporcionar visibilidad operacional en tiempo real.",
     "what": {
       "title": "Qué es CJsmartOps",
-      "body": "Una plataforma modular que combina agentes de telemetría, motores de contención y análisis semántico para proporcionar visibilidad operacional sin precedentes. No es un SIEM tradicional ni un EDR convencional — es una capa de observabilidad contextual."
+      "body": "Una plataforma unificada que combina seis capacidades integradas: detección de amenazas en runtime, telemetría de procesos, orquestación multi-agente, inteligencia semántica, custodia criptográfica y auditoría forense. No es un SIEM tradicional ni un EDR convencional — es una capa de observabilidad contextual diseñada para entornos cloud-native."
     },
     "how": {
       "title": "Cómo Funciona",
@@ -97,58 +103,10 @@
     }
   },
   "products": {
-    "title": "Productos",
-    "subtitle": "Módulos independientes que conforman la plataforma CJsmartOps. Cada uno resuelve un problema específico de la observabilidad en runtime.",
-    "genesis": {
-      "name": "Genesis",
-      "tagline": "Orquestación y Comando Central",
-      "purpose": "Genesis es el sistema nervioso central de la plataforma. Orquesta agentes, correlaciona eventos y proporciona el dashboard operacional.",
-      "problem": "Los entornos multi-agente requieren un punto central de coordinación. Sin orquestación, los agentes operan en silos y la correlación entre endpoints es imposible.",
-      "status": "production",
-      "status_label": "Producción"
-    },
-    "aegis": {
-      "name": "AEGIS",
-      "tagline": "Contención en Runtime",
-      "purpose": "AEGIS aplica políticas de contención a nivel de proceso. Detecta amenazas fileless, gestiona cuarentenas y proporciona gobernanza de confianza adaptativa.",
-      "problem": "Los ataques modernos evaden la detección basada en archivos. Se necesita una capa de contención que opere en memoria, con reversibilidad y registro de auditoría.",
-      "status": "production",
-      "status_label": "Producción"
-    },
-    "vigil": {
-      "name": "Vigil",
-      "tagline": "Telemetría y Detección de Drift",
-      "purpose": "Vigil recolecta señales a nivel de proceso de forma no bloqueante. Establece líneas base de comportamiento y detecta desviaciones tempranas.",
-      "problem": "Sin líneas base de comportamiento, las anomalías operativas y las amenazas genuinas son indistinguibles. Se necesita telemetría longitudinal con contexto.",
-      "status": "production",
-      "status_label": "Producción"
-    },
-    "cipher": {
-      "name": "CIPHER",
-      "tagline": "Inteligencia Semántica",
-      "purpose": "CIPHER enriquece la telemetría cruda con scoring de reputación contextual. Mapea flujos de red, clasifica relaciones y detecta patrones de comunicación anómalos.",
-      "problem": "Los logs de red tradicionales solo muestran IPs y puertos. Sin análisis semántico, los patrones de ataque distribuido permanecen ocultos en el ruido.",
-      "status": "beta",
-      "status_label": "Beta"
-    },
-    "citadel": {
-      "name": "Citadel",
-      "tagline": "Custodia Criptográfica",
-      "purpose": "Citadel proporciona gestión de secretos, cifrado en reposo con estándares criptográficos robustos y rotación de claves para todos los componentes de la plataforma.",
-      "problem": "Los secretos dispersos en archivos de configuración y variables de entorno representan un riesgo crítico. Se necesita custodia centralizada con cifrado verificable.",
-      "status": "alpha",
-      "status_label": "Alpha"
-    },
-    "sentinel": {
-      "name": "Sentinel",
-      "tagline": "Auditoría Forense",
-      "purpose": "Sentinel genera informes de auditoría, verifica cumplimiento y proporciona capacidades forenses para análisis post-incidente.",
-      "problem": "Los equipos de seguridad necesitan evidencia trazable para auditorías y cumplimiento. Sin registros inmutables, la rendición de cuentas es imposible.",
-      "status": "production",
-      "status_label": "Producción"
-    },
-    "overview_title": "Módulos de la Plataforma",
-    "overview_subtitle": "Cada producto está diseñado para operar de forma independiente y correlacionarse con los demás.",
+    "title": "Capacidades",
+    "subtitle": "CJsmartOps es una única plataforma. Estas son sus seis capacidades integradas, cada una diseñada para resolver un aspecto específico de la observabilidad, contención y gobernanza en runtime.",
+    "overview_title": "Capacidades de la Plataforma",
+    "overview_subtitle": "Cada capacidad está diseñada para operar de forma independiente y correlacionarse con las demás dentro de la plataforma.",
     "capabilities": "Capacidades",
     "purpose_label": "Propósito",
     "problem_label": "Problema que Resuelve",
@@ -239,7 +197,7 @@
   },
   "about": {
     "title": "Nosotros",
-    "subtitle": "CJsmartOps es una startup tecnológica que desarrolla una plataforma propia de observabilidad, gobernanza de confianza e inteligencia operacional.",
+    "subtitle": "CJsmartOps es una startup tecnológica fundada y liderada por Carlos Suárez en Argentina. Desarrolla una plataforma SaaS propia de observabilidad, gobernanza de confianza e inteligencia operacional para infraestructura cloud-native.",
     "mission": {
       "title": "Misión",
       "body": "Hacer la observabilidad contextual accesible para infraestructura moderna, reduciendo el ruido operacional y mejorando la transparencia operacional."
@@ -262,13 +220,17 @@
     },
     "origin": {
       "title": "Origen",
-      "body": "Fundada por Carlos Suárez en Argentina. CJsmartOps opera con infraestructura cloud y un equipo enfocado en investigación y desarrollo de plataforma."
+      "body": "Fundada por Carlos Suárez en Argentina. CJsmartOps es una startup liderada por su fundador, con infraestructura cloud y un enfoque intensivo en investigación y desarrollo de plataforma."
     },
     "leadership": {
       "title": "Liderazgo",
       "name": "Carlos Javier Suárez",
       "role": "Founder & CEO",
-      "bio": "Técnico en Computación con formación en Análisis de Sistemas y Programación. Orientado a la observabilidad, la seguridad operacional, la automatización y el desarrollo de plataformas tecnológicas inteligentes. Actualmente lidera la evolución de CJsmartOps, una plataforma de observabilidad y gobernanza de confianza impulsada por IA."
+      "bio": "Técnico en Computación con formación en Análisis de Sistemas y Programación. Diseña, arquitecta, dirige y valida el desarrollo integral de la plataforma CJsmartOps, utilizando IA como acelerador de desarrollo bajo el paradigma de Vibe Coding. Su enfoque combina conocimiento técnico profundo con metodologías modernas de construcción de software, integrando observabilidad, seguridad operacional y automatización en una plataforma cloud-native."
+    },
+    "team": {
+      "title": "Estructura",
+      "body": "CJsmartOps opera como una startup liderada por su fundador (founder-led startup). El desarrollo se acelera mediante herramientas de IA, siempre bajo dirección, validación y control de calidad humano. La arquitectura de la plataforma y las decisiones técnicas son responsabilidad directa del fundador."
     }
   },
   "contact": {
@@ -333,7 +295,7 @@
     }
   },
   "footer": {
-    "tagline": "Plataforma de operaciones, observabilidad y gobernanza de confianza impulsada por IA.",
+    "tagline": "Plataforma SaaS de observabilidad inteligente y gobernanza de confianza para infraestructura moderna.",
     "platform": "Plataforma",
     "company": "Empresa",
     "contact": "Contacto",
@@ -356,16 +318,16 @@
   },
   "meta": {
     "home": {
-      "title": "CJsmartOps — Plataforma de Observabilidad Contextual Impulsada por IA",
-      "description": "CJsmartOps es una plataforma cloud-native de operaciones, observabilidad y gobernanza de confianza. Contención en runtime, telemetría semántica e inteligencia contextual para infraestructura moderna."
+      "title": "CJsmartOps — Observabilidad Inteligente y Seguridad en Runtime",
+      "description": "Plataforma SaaS B2B de observabilidad, contención de amenazas y gobernanza de confianza para infraestructura cloud-native. Detección en runtime con respuesta automatizada."
     },
     "platform": {
       "title": "Plataforma — CJsmartOps",
-      "description": "Ecosistema integrado de agentes, motores de correlación y dashboards para observabilidad contextual en runtime."
+      "description": "Plataforma unificada de observabilidad contextual con seis capacidades integradas: detección de amenazas, telemetría, orquestación, inteligencia semántica, custodia criptográfica y auditoría forense."
     },
     "products": {
-      "title": "Productos — CJsmartOps",
-      "description": "Módulos de la plataforma CJsmartOps: AEGIS, Vigil, Genesis, CIPHER, Citadel y Sentinel."
+      "title": "Capacidades — CJsmartOps",
+      "description": "Las seis capacidades integradas de la plataforma CJsmartOps: AEGIS, Vigil, Genesis, CIPHER, Citadel y Sentinel."
     },
     "technology": {
       "title": "Tecnología — CJsmartOps",
@@ -373,11 +335,11 @@
     },
     "roadmap": {
       "title": "Roadmap — CJsmartOps",
-      "description": "Visión de evolución de la plataforma CJsmartOps."
+      "description": "Visión de evolución de la plataforma CJsmartOps: multi-tenancy, pipelines de ML, SOC as a Service."
     },
     "about": {
       "title": "Nosotros — CJsmartOps",
-      "description": "Startup tecnológica que desarrolla una plataforma propia de observabilidad y gobernanza de confianza."
+      "description": "Startup tecnológica fundada por Carlos Suárez en Argentina. Plataforma SaaS de observabilidad y gobernanza de confianza."
     },
     "contact": {
       "title": "Contacto — CJsmartOps",

@@ -15,7 +15,7 @@ function buildJsonLd(lang: string) {
         "name": "CJsmartOps",
         "url": "https://cjsmartops.com.ar",
         "logo": "https://cjsmartops.com.ar/og-image.png",
-        "description": "AI-powered contextual observability and trust governance platform",
+        "description": "SaaS platform for intelligent observability, runtime security and trust governance for modern cloud-native infrastructure.",
         "foundingDate": "2025",
         "founder": {
           "@type": "Person",
@@ -44,7 +44,7 @@ function buildJsonLd(lang: string) {
         "name": "CJsmartOps Platform",
         "applicationCategory": "SecurityApplication",
         "operatingSystem": "Cloud",
-        "description": "AI-powered platform integrating contextual observability, runtime containment and semantic intelligence for modern cloud-native infrastructure.",
+        "description": "B2B SaaS platform that detects runtime threats, reduces false positives and automates response with full audit traceability. Six integrated capabilities for observability, containment and governance.",
         "offers": {
           "@type": "Offer",
           "description": "Request Demo"
